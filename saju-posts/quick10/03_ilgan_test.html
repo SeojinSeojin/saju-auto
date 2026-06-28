@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>내 일간으로 보는 번아웃 유형</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#050c1a 0%,#0a1628 55%,#080f20 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.2;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 20px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.32);color:#7dd3fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Gugi',sans-serif;font-size:19px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(56,189,248,.8);}
+.title em{color:#38bdf8;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6px;position:relative;z-index:2;}
+.cell{background:rgba(56,189,248,.07);border:1px solid rgba(56,189,248,.16);border-radius:10px;padding:9px 10px;box-shadow:0 0 14px rgba(56,189,248,.08);display:flex;flex-direction:column;gap:3px;}
+.gan{font-family:'Gugi',sans-serif;font-size:14px;color:#38bdf8;text-shadow:0 0 8px rgba(56,189,248,.9);}
+.label{font-size:11px;font-weight:700;color:#e0f2fe;line-height:1.3;}
+.desc{font-size:9.5px;color:rgba(186,230,253,.52);line-height:1.42;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="80" r="1.5" fill="#7dd3fc" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="120" cy="42" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="275" cy="110" r="2" fill="#38bdf8" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="322" cy="72" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="192" cy="26" r="1.5" fill="#7dd3fc" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="52" cy="195" r="1" fill="#38bdf8" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="332" cy="310" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="20" cy="330" r="1" fill="#7dd3fc" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="145" cy="13" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="85" cy="535" r="1" fill="#38bdf8" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M318 24 Q342 13 336 46 Q330 68 312 57 Q328 42 318 24Z" fill="rgba(56,189,248,.25)"/>
+  <g class="deco" transform="translate(265,455)" opacity=".13">
+    <circle cx="25" cy="25" r="22" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+    <line x1="3" y1="25" x2="47" y2="25" stroke="#38bdf8" stroke-width=".8" opacity=".4"/>
+    <line x1="25" y1="3" x2="25" y2="47" stroke="#38bdf8" stroke-width=".8" opacity=".4"/>
+    <circle cx="25" cy="25" r="6" stroke="#38bdf8" stroke-width="1" fill="rgba(56,189,248,.12)"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="160" fill="rgba(30,80,130,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">日干 · 일간</div>
+  <div class="title">번아웃 이유가<br><em>일간마다 다르다</em></div>
+</div>
+
+<div class="grid">
+  <div class="cell">
+    <span class="gan">甲木 갑목</span>
+    <span class="label">목표 없어지면 무너짐</span>
+    <span class="desc">방향 잃은 순간 에너지 전부 꺼짐</span>
+  </div>
+  <div class="cell">
+    <span class="gan">乙木 을목</span>
+    <span class="label">관계 피로 누적</span>
+    <span class="desc">눈치 보다 보면 어느 순간 탈진</span>
+  </div>
+  <div class="cell">
+    <span class="gan">丙火 병화</span>
+    <span class="label">인정받지 못할 때</span>
+    <span class="desc">쏟아부었는데 반응 없으면 급격히 식음</span>
+  </div>
+  <div class="cell">
+    <span class="gan">丁火 정화</span>
+    <span class="label">혼자 다 떠안을 때</span>
+    <span class="desc">속으로 삭히다 한계점에서 터짐</span>
+  </div>
+  <div class="cell">
+    <span class="gan">戊土 무토</span>
+    <span class="label">변화가 너무 많을 때</span>
+    <span class="desc">안정 무너지면 버티다 무너짐</span>
+  </div>
+  <div class="cell">
+    <span class="gan">己土 기토</span>
+    <span class="label">완벽주의 자기비난</span>
+    <span class="desc">작은 실수도 못 넘기고 에너지 소진</span>
+  </div>
+  <div class="cell">
+    <span class="gan">庚金 경금</span>
+    <span class="label">의지할 곳 없을 때</span>
+    <span class="desc">혼자 꿋꿋하다가 갑자기 방전</span>
+  </div>
+  <div class="cell">
+    <span class="gan">辛金 신금</span>
+    <span class="label">감수성 과부하</span>
+    <span class="desc">너무 많이 느껴서 지쳐버림</span>
+  </div>
+  <div class="cell">
+    <span class="gan">壬水 임수</span>
+    <span class="label">막힌 느낌이 지속될 때</span>
+    <span class="desc">흐름이 정체되면 급격히 의욕 저하</span>
+  </div>
+  <div class="cell">
+    <span class="gan">癸水 계수</span>
+    <span class="label">감정 쌓인 게 폭발</span>
+    <span class="desc">참고 참다가 한 번에 무너짐</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

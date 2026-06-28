@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대운 바뀌면 진짜 인생이 바뀌나?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#08071e 0%,#100d30 55%,#060518 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.2;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.36);color:#a5b4fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Black Han Sans',sans-serif;font-size:21px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(99,102,241,.85);}
+.title em{color:#818cf8;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:8px;position:relative;z-index:2;}
+.item{display:flex;align-items:stretch;gap:0;}
+.accent{width:3px;border-radius:4px;background:linear-gradient(180deg,#818cf8,#4f46e5);flex-shrink:0;box-shadow:0 0 10px rgba(99,102,241,.7);}
+.body{flex:1;background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.14);border-left:none;border-radius:0 10px 10px 0;padding:8px 12px;box-shadow:0 0 16px rgba(99,102,241,.07);}
+.it{font-size:12.5px;font-weight:700;color:#e0e7ff;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(165,180,252,.52);line-height:1.42;margin-top:2px;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="44" cy="85" r="1.5" fill="#a5b4fc" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="116" cy="41" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="280" cy="112" r="2" fill="#818cf8" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="76" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="198" cy="25" r="1.5" fill="#a5b4fc" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="55" cy="200" r="1" fill="#818cf8" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="335" cy="305" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="22" cy="328" r="1" fill="#a5b4fc" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="150" cy="14" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="90" cy="530" r="1" fill="#818cf8" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M319 23 Q343 12 337 45 Q331 67 313 56 Q329 41 319 23Z" fill="rgba(129,140,248,.26)"/>
+  <!-- Hourglass decoration -->
+  <g class="deco" transform="translate(262,455)" opacity=".14">
+    <path d="M10 5 L42 5 L42 8 Q42 25 26 32 Q10 39 10 56 L10 59 L42 59 L42 56 Q42 39 26 32 Q10 25 10 8 Z" stroke="#818cf8" stroke-width="1.5" fill="none"/>
+    <line x1="10" y1="5" x2="42" y2="5" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="10" y1="59" x2="42" y2="59" stroke="#818cf8" stroke-width="1.5"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="162" fill="rgba(60,50,160,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">實用 · 실용</div>
+  <div class="title">10년이 한 번에 바뀌는 게<br><em>맞다</em></div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">대운(大運)은 10년 단위로 교체되는 큰 흐름</div><div class="id">원국(사주 원판)이 토대, 대운이 그 위 조명이 바뀌는 것</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">같은 사람도 대운에 따라 결과가 달라짐</div><div class="id">좋은 원국도 나쁜 대운이면 막히고, 그 반대도 가능</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">대운 바뀌기 1~2년 전부터 조짐이 옴</div><div class="id">갑자기 불안하거나 이상하게 마음이 떠다니는 시기</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">재물운 대운 vs 관운 대운은 체감이 완전히 다름</div><div class="id">돈이 되는 시기가 따로 있고, 인정받는 시기가 따로 있음</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">대운이 안 좋아도 세운(올해 운)이 받쳐주면 돌파</div><div class="id">대운·세운·원국 세 개가 맞물릴 때 인생의 피크가 옴</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">"나만 안 풀린다"는 느낌이 사실일 수 있음</div><div class="id">대운이 인생을 막는 구간은 실재한다 — 때를 아는 것도 실력</div></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

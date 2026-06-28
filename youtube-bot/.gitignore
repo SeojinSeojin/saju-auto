@@ -1,0 +1,8 @@
+token.json
+.env
+*.mp4
+*.png
+__pycache__/
+*.pyc
+.DS_Store
+saju_png

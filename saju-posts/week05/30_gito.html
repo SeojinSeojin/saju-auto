@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기토 일간 — 묵묵히 다 받아주다 한 번에 터짐</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#0a0600 0%,#1a0f05 55%,#080500 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.4s ease-in-out infinite;}
+.deco{animation:shimmer 6.2s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(217,119,6,.18);border:1px solid rgba(217,119,6,.36);color:#fcd34d;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:18px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(217,119,6,.6);}
+.title em{color:#f59e0b;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:0;border-left:3px solid rgba(217,119,6,.5);padding:7px 12px;background:rgba(217,119,6,.07);border-radius:0 10px 10px 0;box-shadow:0 0 12px rgba(217,119,6,.08);}
+.item-inner{display:flex;flex-direction:column;gap:2px;}
+.it{font-size:12.5px;font-weight:700;color:#fef3c7;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(253,211,77,.6);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="36" cy="88" r="1.5" fill="#fcd34d" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="110" cy="44" r="1" fill="#fff" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="114" r="2" fill="#fcd34d" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="78" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="194" cy="28" r="1.5" fill="#fff" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="194" r="1" fill="#fcd34d" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 30 Q340 20 334 50 Q328 70 311 60 Q326 46 318 30Z" fill="rgba(253,211,77,.22)"/>
+  <!-- Decoration: mountain (토 = earth) -->
+  <g class="deco" transform="translate(250,458)" opacity=".14">
+    <path d="M0 50 L30 5 L60 50 Z" stroke="#d97706" stroke-width="2.5" fill="rgba(217,119,6,.15)" stroke-linejoin="round"/>
+    <path d="M10 50 L35 18 L60 50" stroke="#d97706" stroke-width="1.5" fill="none" opacity=".5"/>
+    <line x1="0" y1="50" x2="60" y2="50" stroke="#d97706" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="195" ry="155" fill="rgba(146,64,14,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">일간 · 土</div>
+  <div class="title"><em>기토(己土)</em> 일간<br>묵묵히 다 받아주다 한 번에 터짐</div>
+</div>
+
+<div class="items">
+  <div class="item"><div class="item-inner"><span class="it">비옥한 밭 같은 사람</span><span class="id">모든 것을 품어주는 너그러운 기질이 기본값</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">아무 말 안 해도 다 알고 있음</span><span class="id">눈치가 빠르고 상황 파악이 빠름. 근데 말 안 함</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">받아주고 참는 게 습관이 되어버림</span><span class="id">No를 못 해서 혼자 다 짊어짐. 몇 번째야 ㅠ</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">쌓이면 예고 없이 한 번에 폭발</span><span class="id">주변이 갑자기 당황함. 나도 당황</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">갑목(甲木)이 뿌리내려야 쓸모가 있음</span><span class="id">방향을 제시해 주는 사람이 있을 때 진짜 빛을 냄</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">사람에게 배신당하면 충격이 큼</span><span class="id">선한 만큼 기대도 큰데, 배신이 오면 오래 아픔</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">경계를 세우는 연습이 기토의 숙제</span><span class="id">다 받아주는 것이 미덕이 아님. 나를 먼저 지키는 게 먼저 🙋</span></div></div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

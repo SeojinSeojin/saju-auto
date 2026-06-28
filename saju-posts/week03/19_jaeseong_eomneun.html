@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>재성 없는 사주 — 진짜 돈복 없는 건가?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#0a0600 0%,#1a1000 55%,#080500 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(245,158,11,.16);border:1px solid rgba(245,158,11,.32);color:#fcd34d;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(245,158,11,.55);}
+.title em{color:#fbbf24;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative;z-index:2;}
+.gitem{background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.15);border-radius:12px;padding:12px 11px;display:flex;flex-direction:column;gap:5px;box-shadow:0 0 16px rgba(245,158,11,.09);}
+.gitem.wide{grid-column:span 2;}
+.gicon{font-size:20px;}
+.git{font-size:12px;font-weight:700;color:#fef3c7;line-height:1.35;}
+.gid{font-size:10px;color:rgba(253,211,77,.58);line-height:1.45;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="90" r="1.5" fill="#fcd34d" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="114" cy="46" r="1" fill="#fff" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="286" cy="116" r="2" fill="#fcd34d" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="322" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="198" cy="30" r="1.5" fill="#fff" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="198" r="1" fill="#fcd34d" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(253,211,77,.22)"/>
+  <!-- Decoration: empty purse -->
+  <g class="deco" transform="translate(256,454)" opacity=".13">
+    <path d="M8 20 Q8 8 26 8 Q44 8 44 20 L48 55 Q48 62 26 62 Q4 62 4 55 Z" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <path d="M15 8 Q18 0 26 0 Q34 0 37 8" stroke="#f59e0b" stroke-width="1.5" fill="none"/>
+    <line x1="18" y1="35" x2="34" y2="35" stroke="#f59e0b" stroke-width="2"/>
+    <text x="22" y="48" font-size="10" fill="rgba(245,158,11,.4)">?</text>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="195" ry="155" fill="rgba(146,64,14,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 십성</div>
+  <div class="title"><em>재성 없는</em> 사주<br>진짜 돈복 없는 건가?</div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="gicon">❌</span>
+    <span class="git">재성 없음 ≠ 돈 못 법</span>
+    <span class="gid">식상이 재성을 생하면 충분히 돈 벌 수 있음</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🔍</span>
+    <span class="git">대운에서 재성이 들어옴</span>
+    <span class="gid">원국에 없어도 대운·세운에서 재성 오는 시기가 있음</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">📌</span>
+    <span class="git">재성 없으면 돈에 집착하지 않음</span>
+    <span class="gid">돈을 목적으로 일하지 않아서 오히려 자유롭기도</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">⚠️</span>
+    <span class="git">재성 없으면 재물 관리가 약할 수 있음</span>
+    <span class="gid">~로 보기도 함. 의식적 재무 관리 습관이 필요</span>
+  </div>
+  <div class="gitem wide">
+    <span class="gicon">💡</span>
+    <span class="git">재성 없다고 가난한 게 아님. 방향이 다른 것</span>
+    <span class="gid">돈보다 명예·지식·관계를 먹고사는 사주일 수 있음. 뜨끔 🙋</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

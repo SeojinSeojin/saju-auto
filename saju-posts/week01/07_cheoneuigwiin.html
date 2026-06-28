@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>천을귀인 있으면 진짜 귀인이 나타나나?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#0a0318 0%,#180530 55%,#070820 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.82;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(168,85,247,.2);border:1px solid rgba(168,85,247,.4);color:#c084fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.35;color:#fff;text-shadow:0 0 22px rgba(168,85,247,.65);}
+.title em{color:#c084fc;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative;z-index:2;}
+.gitem{background:rgba(168,85,247,.07);border:1px solid rgba(168,85,247,.15);border-radius:12px;padding:12px 11px;display:flex;flex-direction:column;gap:5px;box-shadow:0 0 16px rgba(168,85,247,.1);}
+.gitem.wide{grid-column:span 2;}
+.gicon{font-size:20px;line-height:1;}
+.git{font-size:12px;font-weight:700;color:#ede9fe;line-height:1.35;}
+.gid{font-size:10.5px;color:rgba(196,181,253,.58);line-height:1.45;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="88" r="1.5" fill="#fff" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="112" cy="44" r="1" fill="#c084fc" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="284" cy="112" r="2" fill="#fff" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="318" cy="78" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#c084fc" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="56" cy="196" r="1" fill="#fff" style="--d:2.1s;--delay:1.3s;"/>
+  <circle class="star" cx="326" cy="308" r="1.5" fill="#c084fc" style="--d:2.8s;--delay:.6s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(192,132,252,.32)"/>
+  <!-- Decoration: star burst (천을귀인 = heavenly helper) -->
+  <g class="deco" transform="translate(258,452)" opacity=".14">
+    <circle cx="25" cy="25" r="12" fill="rgba(196,181,253,.2)" stroke="rgba(168,85,247,.5)" stroke-width="1.5"/>
+    <line x1="25" y1="5" x2="25" y2="45" stroke="rgba(168,85,247,.6)" stroke-width="1.5"/>
+    <line x1="5" y1="25" x2="45" y2="25" stroke="rgba(168,85,247,.6)" stroke-width="1.5"/>
+    <line x1="11" y1="11" x2="39" y2="39" stroke="rgba(168,85,247,.4)" stroke-width="1.5"/>
+    <line x1="39" y1="11" x2="11" y2="39" stroke="rgba(168,85,247,.4)" stroke-width="1.5"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="192" ry="152" fill="rgba(109,40,217,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">貴人 · 귀인</div>
+  <div class="title"><em>천을귀인</em> 있으면<br>진짜 귀인이 나타나나?</div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="gicon">✨</span>
+    <span class="git">로 보면: 맞음</span>
+    <span class="gid">힘든 순간 누군가가 손을 내밀어 주는 경험이 많음</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🤔</span>
+    <span class="git">로 보면: 확정 아님</span>
+    <span class="gid">귀인을 알아보고 받아들이는 그릇이 돼야 발동</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">📅</span>
+    <span class="git">귀인이 나타나는 시기</span>
+    <span class="gid">대운·세운에서 천을귀인 지지가 들어오는 해</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🌱</span>
+    <span class="git">귀인의 형태</span>
+    <span class="gid">사람뿐 아니라 기회·정보·우연한 만남도 귀인</span>
+  </div>
+  <div class="gitem wide">
+    <span class="gicon">💡</span>
+    <span class="git">갑무경 → 丑未 / 을기 → 子申 / 병정 → 亥酉 / 임계 → 巳卯</span>
+    <span class="gid">내 일간 기준으로 만세력에서 천을귀인 지지 확인하세요</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사주로 보는 오래 가는 커플의 공통점</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#1a0010 0%,#2d0020 55%,#0f000f 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(236,72,153,.18);border:1px solid rgba(236,72,153,.36);color:#f9a8d4;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(236,72,153,.65);}
+.title em{color:#f472b6;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:0;border-left:3px solid rgba(236,72,153,.5);padding:7px 12px;background:rgba(236,72,153,.07);border-radius:0 10px 10px 0;box-shadow:0 0 12px rgba(236,72,153,.08);}
+.item-inner{display:flex;flex-direction:column;gap:2px;}
+.it{font-size:12.5px;font-weight:700;color:#fce7f3;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(249,168,212,.6);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="90" r="1.5" fill="#fca5a5" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="112" cy="46" r="1" fill="#f9a8d4" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="116" r="2" fill="#fca5a5" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="194" cy="30" r="1.5" fill="#f9a8d4" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="194" r="1" fill="#fff" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 30 Q340 20 334 50 Q328 70 311 60 Q326 46 318 30Z" fill="rgba(249,168,212,.28)"/>
+  <!-- Decoration: interlocked circles -->
+  <g class="deco" transform="translate(252,455)" opacity=".14">
+    <circle cx="18" cy="25" r="18" stroke="#f472b6" stroke-width="2" fill="none"/>
+    <circle cx="38" cy="25" r="18" stroke="#f472b6" stroke-width="2" fill="rgba(244,114,182,.05)"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="195" ry="155" fill="rgba(190,24,93,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">궁합 · 연애</div>
+  <div class="title">사주로 보는<br><em>오래 가는 커플</em>의 공통점</div>
+</div>
+
+<div class="items">
+  <div class="item"><div class="item-inner"><span class="it">일지(日支)끼리 합이 있음</span><span class="id">일주의 지지가 합을 이루면 체질적으로 편안함</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">오행이 서로 보완함</span><span class="id">내가 약한 오행을 상대방이 채워줌. 완전체 느낌</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">상대방이 내 용신 오행을 가짐</span><span class="id">옆에 있으면 왠지 컨디션이 좋아지는 사람</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">재성·관성이 상대 일간과 연결됨</span><span class="id">~로 보기도 함. 사주 전체 맥락 중요</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">서로 충이 없거나 충을 풀어주는 구조</span><span class="id">충이 있어도 합이 충을 제어하면 괜찮음</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">대운 흐름이 비슷한 시기에 만남</span><span class="id">둘 다 좋은 대운일 때 만난 커플이 오래 감</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">결론: 궁합보다 내 사주가 먼저</span><span class="id">내가 준비되어 있을 때 맞는 사람이 옴 🙋</span></div></div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오행별 추천 직업 총정리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(145deg,#040210 0%,#080320 55%,#020108 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.1;}50%{opacity:.78;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.17;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.4s ease-in-out infinite;}
+.deco{animation:shimmer 6.8s ease-in-out infinite .9s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(139,92,246,.15);border:1px solid rgba(139,92,246,.3);color:#a78bfa;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(139,92,246,.55);}
+.title em{color:#a78bfa;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:8px;position:relative;z-index:2;}
+.gitem{border-radius:12px;padding:11px 10px;display:flex;flex-direction:column;gap:4px;}
+.gitem.mk{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.18);}
+.gitem.hk{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.15);}
+.gitem.tk{background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.15);}
+.gitem.gk{background:rgba(226,232,240,.05);border:1px solid rgba(226,232,240,.12);}
+.gitem.sk{background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.15);}
+.gh{font-family:'Jua',sans-serif;font-size:13px;font-weight:700;line-height:1;}
+.gh.mk{color:#34d399;}
+.gh.hk{color:#f87171;}
+.gh.tk{color:#fbbf24;}
+.gh.gk{color:#e2e8f0;}
+.gh.sk{color:#60a5fa;}
+.gid{font-size:10px;line-height:1.45;}
+.gid.mk{color:rgba(110,231,183,.68);}
+.gid.hk{color:rgba(252,165,165,.65);}
+.gid.tk{color:rgba(253,211,77,.65);}
+.gid.gk{color:rgba(203,213,225,.65);}
+.gid.sk{color:rgba(147,197,253,.65);}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="88" r="1.5" fill="#a78bfa" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="112" cy="44" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="282" cy="116" r="2" fill="#7c3aed" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="76" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#a78bfa" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="196" r="1" fill="#fff" style="--d:2.1s;--delay:1.3s;"/>
+  <path class="moon" d="M318 28 Q340 18 334 48 Q328 68 311 58 Q326 44 318 28Z" fill="rgba(167,139,250,.22)"/>
+  <!-- Five pointed star (오행) -->
+  <g class="deco" transform="translate(256,454)" opacity=".11">
+    <polygon points="32,2 40,26 66,26 46,42 54,66 32,50 10,66 18,42 0,26 24,26" stroke="#a78bfa" stroke-width="1.5" fill="rgba(139,92,246,.08)" stroke-linejoin="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="196" ry="156" fill="rgba(67,20,217,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">실용 정보 · 오행</div>
+  <div class="title"><em>오행별</em> 추천 직업 총정리</div>
+</div>
+
+<div class="grid">
+  <div class="gitem mk">
+    <div class="gh mk">🌿 목(木) 용신</div>
+    <div class="gid mk">교육·출판·언론<br>환경·의류·임업<br>기획·마케팅</div>
+  </div>
+  <div class="gitem hk">
+    <div class="gh hk">🔥 화(火) 용신</div>
+    <div class="gid hk">방송·공연·예술<br>외식업·뷰티<br>강사·PR·홍보</div>
+  </div>
+  <div class="gitem tk">
+    <div class="gh tk">🏔️ 토(土) 용신</div>
+    <div class="gid tk">부동산·건축·농업<br>의학·상담·사회복지<br>인사·행정·총무</div>
+  </div>
+  <div class="gitem gk">
+    <div class="gh gk">💎 금(金) 용신</div>
+    <div class="gid gk">금융·회계·법조<br>기계·제조·IT<br>외과·군인·경찰</div>
+  </div>
+  <div class="gitem sk">
+    <div class="gh sk">🌊 수(水) 용신</div>
+    <div class="gid sk">유통·무역·여행<br>철학·종교·심리<br>연구·작가·컨설팅</div>
+  </div>
+  <div class="gitem" style="background:rgba(139,92,246,.07);border:1px solid rgba(139,92,246,.15);">
+    <div class="gh" style="color:#a78bfa;">✨ 핵심 기준</div>
+    <div class="gid" style="color:rgba(196,181,253,.65);">용신 오행 기준.<br>일간·격국도 함께<br>고려해야 정확 🙋</div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

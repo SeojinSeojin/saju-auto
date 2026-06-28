@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오행으로 보는 내 성격 한 줄 요약</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#050d08 0%,#0a1810 55%,#060c09 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.2;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 20px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.3);color:#86efac;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Gasoek One',sans-serif;font-size:19px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(34,197,94,.7);}
+.title em{color:#4ade80;font-style:normal;}
+.rows{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.row{display:flex;align-items:center;gap:0;border-radius:10px;overflow:hidden;}
+.badge{width:54px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px 4px;gap:1px;}
+.han{font-family:'Gasoek One',sans-serif;font-size:18px;line-height:1;}
+.ko{font-size:9px;color:rgba(255,255,255,.55);letter-spacing:.3px;}
+.content{flex:1;padding:10px 12px;display:flex;flex-direction:column;gap:2px;}
+.label{font-size:12px;font-weight:700;color:#f0fdf4;line-height:1.25;}
+.desc{font-size:10px;color:rgba(187,247,208,.52);line-height:1.42;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="43" cy="80" r="1.5" fill="#86efac" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="119" cy="42" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="271" cy="109" r="2" fill="#4ade80" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="317" cy="71" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="191" cy="25" r="1.5" fill="#86efac" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="51" cy="196" r="1" fill="#4ade80" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="335" cy="300" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="21" cy="328" r="1" fill="#86efac" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="147" cy="12" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="87" cy="526" r="1" fill="#4ade80" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M317 23 Q341 12 335 45 Q329 67 311 56 Q327 41 317 23Z" fill="rgba(74,222,128,.22)"/>
+  <!-- Pentagram / five elements symbol -->
+  <g class="deco" transform="translate(258,452)" opacity=".12">
+    <polygon points="28,4 34,22 52,22 38,34 44,52 28,40 12,52 18,34 4,22 22,22" stroke="#4ade80" stroke-width="1.5" fill="none"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="162" fill="rgba(10,80,30,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">五行 · 오행</div>
+  <div class="title"><em>목화토금수</em> —<br>한 줄로 설명되는 내 성격</div>
+</div>
+
+<div class="rows">
+  <div class="row" style="background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.18);">
+    <div class="badge" style="background:rgba(74,222,128,.14);">
+      <span class="han" style="color:#4ade80;text-shadow:0 0 10px rgba(74,222,128,.9);">木</span>
+      <span class="ko">목</span>
+    </div>
+    <div class="content">
+      <span class="label">뻗어나가야 사는 사람</span>
+      <span class="desc">성장·방향·계획이 없으면 질식함. 시작이 특기</span>
+    </div>
+  </div>
+  <div class="row" style="background:rgba(251,146,60,.08);border:1px solid rgba(251,146,60,.18);">
+    <div class="badge" style="background:rgba(251,146,60,.14);">
+      <span class="han" style="color:#fb923c;text-shadow:0 0 10px rgba(251,146,60,.9);">火</span>
+      <span class="ko">화</span>
+    </div>
+    <div class="content">
+      <span class="label">빛나야 사는 사람</span>
+      <span class="desc">표현·열정·인정. 무대 위에 있을 때 제 기능을 함</span>
+    </div>
+  </div>
+  <div class="row" style="background:rgba(234,179,8,.08);border:1px solid rgba(234,179,8,.18);">
+    <div class="badge" style="background:rgba(234,179,8,.14);">
+      <span class="han" style="color:#eab308;text-shadow:0 0 10px rgba(234,179,8,.9);">土</span>
+      <span class="ko">토</span>
+    </div>
+    <div class="content">
+      <span class="label">중심을 지키는 사람</span>
+      <span class="desc">신뢰·중립·포용. 흔들리는 건 딱 질색</span>
+    </div>
+  </div>
+  <div class="row" style="background:rgba(148,163,184,.08);border:1px solid rgba(148,163,184,.18);">
+    <div class="badge" style="background:rgba(148,163,184,.14);">
+      <span class="han" style="color:#94a3b8;text-shadow:0 0 10px rgba(148,163,184,.8);">金</span>
+      <span class="ko">금</span>
+    </div>
+    <div class="content">
+      <span class="label">기준이 확실한 사람</span>
+      <span class="desc">원칙·판단·정리. 흐릿한 상황을 못 견딤</span>
+    </div>
+  </div>
+  <div class="row" style="background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.18);">
+    <div class="badge" style="background:rgba(56,189,248,.14);">
+      <span class="han" style="color:#38bdf8;text-shadow:0 0 10px rgba(56,189,248,.9);">水</span>
+      <span class="ko">수</span>
+    </div>
+    <div class="content">
+      <span class="label">흐르며 담는 사람</span>
+      <span class="desc">지혜·적응·관찰. 강요당하면 막힘. 유연함이 힘</span>
+    </div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

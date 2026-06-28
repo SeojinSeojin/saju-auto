@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>편관 있는 사람이 번아웃에 취약한 이유</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(150deg,#140406 0%,#240810 55%,#0e0204 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.4s ease-in-out infinite;}
+.deco{animation:shimmer 6.5s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(220,38,38,.17);border:1px solid rgba(220,38,38,.34);color:#fca5a5;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.38;color:#fff;text-shadow:0 0 22px rgba(220,38,38,.6);}
+.title em{color:#f87171;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:0;border-left:3px solid rgba(220,38,38,.48);padding:7px 12px;background:rgba(220,38,38,.06);border-radius:0 10px 10px 0;box-shadow:0 0 12px rgba(220,38,38,.07);}
+.item-inner{display:flex;flex-direction:column;gap:2px;}
+.it{font-size:12.5px;font-weight:700;color:#fee2e2;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(252,165,165,.62);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="88" r="1.5" fill="#fca5a5" style="--d:2.4s;--delay:.1s;"/>
+  <circle class="star" cx="114" cy="46" r="1" fill="#fff" style="--d:3.2s;--delay:.6s;"/>
+  <circle class="star" cx="286" cy="116" r="2" fill="#fca5a5" style="--d:2.6s;--delay:1.1s;"/>
+  <circle class="star" cx="322" cy="78" r="1" fill="#fff" style="--d:2s;--delay:.4s;"/>
+  <circle class="star" cx="198" cy="30" r="1.5" fill="#fff" style="--d:3.4s;--delay:.9s;"/>
+  <circle class="star" cx="62" cy="198" r="1" fill="#fca5a5" style="--d:2.2s;--delay:1.4s;"/>
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(252,165,165,.25)"/>
+  <!-- Flame going out deco -->
+  <g class="deco" transform="translate(262,455)" opacity=".12">
+    <path d="M20 50 Q8 40 10 25 Q15 10 20 5 Q22 20 28 25 Q32 15 30 5 Q38 18 36 30 Q38 42 28 50Z" stroke="#ef4444" stroke-width="1.5" fill="none"/>
+    <line x1="18" y1="54" x2="32" y2="54" stroke="#ef4444" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 3"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="196" ry="156" fill="rgba(127,29,29,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 편관(칠살)</div>
+  <div class="title"><em>편관</em> 있는 사람이<br>번아웃에 취약한 이유</div>
+</div>
+
+<div class="items">
+  <div class="item"><div class="item-inner"><span class="it">나를 강하게 극하는 압박 에너지</span><span class="id">편관(칠살)은 쉬지 말고 움직이라는 신호를 계속 보냄</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">성과를 내야 존재감을 느끼는 패턴</span><span class="id">쉬고 있으면 뒤처지는 것 같은 불안이 항상 있음</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">제어 없이 달리면 자기 파괴로 이어짐</span><span class="id">식신·인성이 없으면 편관의 극기가 한계를 넘어섬</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">번아웃이 와도 쉬지 못하는 성격</span><span class="id">멈추는 것이 패배처럼 느껴져 더 몰아붙임</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">외부 압박에 과도하게 반응</span><span class="id">상사·경쟁자·평가의 시선이 자기 소모로 직결</span></div></div>
+  <div class="item"><div class="item-inner"><span class="it">정기적 완전 휴식이 유일한 해결책</span><span class="id">편관 있으면 의도적 멈춤을 일정에 강제로 넣어야 함 🙋</span></div></div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

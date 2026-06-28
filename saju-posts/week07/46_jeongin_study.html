@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정인 있는 사람이 공부를 평생 놓지 못하는 이유</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(145deg,#080220 0%,#120435 55%,#060818 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.1;}50%{opacity:.78;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:64px 24px 84px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.5s ease-in-out infinite;}
+.deco{animation:shimmer 7s ease-in-out infinite 1s;}
+.hero{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:22px;}
+.tag{display:inline-block;background:rgba(139,92,246,.18);border:1px solid rgba(139,92,246,.36);color:#a78bfa;font-size:10px;padding:2px 10px;border-radius:20px;letter-spacing:.5px;align-self:flex-start;}
+.big-text{font-family:'Jua',sans-serif;font-size:36px;line-height:1.2;color:#fff;text-shadow:0 0 40px rgba(139,92,246,.8),0 0 80px rgba(139,92,246,.3);}
+.big-text em{color:#a78bfa;font-style:normal;}
+.phrases{display:flex;flex-direction:column;gap:14px;}
+.phrase-block{border-left:3px solid rgba(139,92,246,.55);padding-left:14px;}
+.phrase{font-family:'Jua',sans-serif;font-size:15px;color:#ddd6fe;line-height:1.35;text-shadow:0 0 12px rgba(139,92,246,.45);}
+.phrase-sub{font-size:10.5px;color:rgba(196,181,253,.58);margin-top:3px;line-height:1.5;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="90" r="1.5" fill="#a78bfa" style="--d:2.4s;--delay:.1s;"/>
+  <circle class="star" cx="114" cy="46" r="1" fill="#fff" style="--d:3.2s;--delay:.6s;"/>
+  <circle class="star" cx="284" cy="116" r="2" fill="#a78bfa" style="--d:2.6s;--delay:1.1s;"/>
+  <circle class="star" cx="322" cy="80" r="1" fill="#fff" style="--d:2s;--delay:.3s;"/>
+  <circle class="star" cx="200" cy="30" r="1.5" fill="#fff" style="--d:3.4s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="200" r="1" fill="#a78bfa" style="--d:2.2s;--delay:1.3s;"/>
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(167,139,250,.3)"/>
+  <!-- Open book deco -->
+  <g class="deco" transform="translate(245,455)" opacity=".13">
+    <rect x="0" y="10" width="30" height="40" rx="3" stroke="#a78bfa" stroke-width="2" fill="none"/>
+    <rect x="32" y="10" width="30" height="40" rx="3" stroke="#a78bfa" stroke-width="2" fill="none"/>
+    <line x1="30" y1="10" x2="32" y2="10" stroke="#a78bfa" stroke-width="3"/>
+    <line x1="30" y1="50" x2="32" y2="50" stroke="#a78bfa" stroke-width="3"/>
+    <line x1="5" y1="20" x2="25" y2="20" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+    <line x1="5" y1="28" x2="25" y2="28" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+    <line x1="5" y1="36" x2="20" y2="36" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+    <line x1="37" y1="20" x2="57" y2="20" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+    <line x1="37" y1="28" x2="57" y2="28" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+    <line x1="37" y1="36" x2="52" y2="36" stroke="rgba(167,139,250,.5)" stroke-width="1.5"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="360" rx="200" ry="165" fill="rgba(109,40,217,.04)"/>
+  <text x="180" y="510" text-anchor="middle" font-size="110" fill="rgba(139,92,246,.04)" font-family="serif">印</text>
+</svg>
+
+<div class="hero">
+  <div class="tag">十星 · 정인</div>
+  <div class="big-text">배움이<br><em>멈추지</em><br>않는 사람</div>
+  <div class="phrases">
+    <div class="phrase-block">
+      <div class="phrase">정인 = 어머니·학문·수용의 별</div>
+      <div class="phrase-sub">지식 흡수가 기쁨 자체. 배우는 과정이 곧 보상임</div>
+    </div>
+    <div class="phrase-block">
+      <div class="phrase">재성을 극하는 구조</div>
+      <div class="phrase-sub">공부로 만족감이 충족되니 돈에 집착하기가 어려움</div>
+    </div>
+    <div class="phrase-block">
+      <div class="phrase">지식을 파는 것이 정답</div>
+      <div class="phrase-sub">강의·교육·상담·저술 — 배운 것을 나눌 때 진짜 빛남 🌟</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

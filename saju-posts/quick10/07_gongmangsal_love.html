@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공망살 있는 사람의 연애 패턴</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#1a0814 0%,#28101e 55%,#180610 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.22;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(244,63,94,.15);border:1px solid rgba(244,63,94,.32);color:#fda4af;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Black Han Sans',sans-serif;font-size:21px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(244,63,94,.8);}
+.title em{color:#fb7185;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(244,63,94,.07);border:1px solid rgba(244,63,94,.14);border-radius:10px;padding:8px 12px;box-shadow:0 0 16px rgba(244,63,94,.08);}
+.num{font-family:'Black Han Sans',sans-serif;font-size:17px;color:#f43f5e;min-width:26px;line-height:1.15;text-shadow:0 0 10px rgba(244,63,94,.9);}
+.tx{display:flex;flex-direction:column;gap:2px;}
+.it{font-size:12.5px;font-weight:700;color:#ffe4e6;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(253,164,175,.52);line-height:1.42;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="46" cy="84" r="1.5" fill="#fda4af" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="118" cy="43" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="274" cy="112" r="2" fill="#fb7185" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="319" cy="74" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="195" cy="27" r="1.5" fill="#fda4af" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="52" cy="198" r="1" fill="#fb7185" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="333" cy="304" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="21" cy="332" r="1" fill="#fda4af" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="149" cy="13" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="89" cy="530" r="1" fill="#fb7185" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M318 26 Q342 15 336 48 Q330 70 312 59 Q328 44 318 26Z" fill="rgba(251,113,133,.26)"/>
+  <!-- Broken heart decoration -->
+  <g class="deco" transform="translate(258,452)" opacity=".14">
+    <path d="M28 48 L8 28 Q4 22 10 16 Q16 10 22 14 L28 20 L30 16 L26 8 Q30 4 36 6 Q44 10 44 18 Q44 24 38 30 Z" stroke="#f43f5e" stroke-width="1.5" fill="none"/>
+    <line x1="24" y1="22" x2="32" y2="30" stroke="#f43f5e" stroke-width="1.5" opacity=".6"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="162" fill="rgba(130,20,50,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">神煞·연애</div>
+  <div class="title">잡힐 듯 잡히지 않는<br><em>사람의 정체</em></div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">공망살은 빈 공간(空亡) — 채워지지 않는 느낌</span><span class="id">연애할 때 항상 어딘가 허전하고 아쉬운 감각이 남음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">인연이 왔다가 이유 없이 사라짐</span><span class="id">잘 되다가 어느 순간 흐지부지 — 반복되면 공망 의심</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">이상형이 너무 높거나 비현실적</span><span class="id">현실에 없는 사람을 찾는 패턴 — 공망이 기준을 왜곡함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">연애 중에도 외로움이 해소 안 됨</span><span class="id">옆에 있어도 혼자인 느낌 — 공망의 대표 감각</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">공망이 배우자궁에 들면 더 강하게 작용</span><span class="id">결혼 자체가 늦어지거나 파혼·이별이 반복되기도 함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">단, 공망 채우기 — 빈 자리를 아는 사람이 더 깊어짐</span><span class="id">자기 공망을 알면 반복 패턴에서 먼저 빠져나올 수 있음</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

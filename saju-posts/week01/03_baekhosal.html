@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>백호살 있으면 실제로 이런 일이 생긴다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#0e0515 0%,#1c0630 55%,#0b0820 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;transform:scale(1);}50%{opacity:.17;transform:scale(1.04);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 5.8s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(168,85,247,.18);border:1px solid rgba(168,85,247,.36);color:#c084fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(168,85,247,.65);}
+.title em{color:#c084fc;font-style:normal;}
+.subtitle{font-size:11px;color:rgba(196,181,253,.55);margin-top:4px;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative;z-index:2;}
+.gitem{background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.16);border-radius:12px;padding:14px 12px;display:flex;flex-direction:column;gap:6px;box-shadow:0 0 18px rgba(168,85,247,.1);}
+.gicon{font-size:24px;line-height:1;}
+.git{font-size:12px;font-weight:700;color:#ede9fe;line-height:1.35;}
+.gid{font-size:10.5px;color:rgba(196,181,253,.6);line-height:1.5;}
+.bottom-note{position:relative;z-index:2;background:rgba(168,85,247,.1);border:1px solid rgba(168,85,247,.2);border-radius:10px;padding:9px 13px;text-align:center;}
+.bn-text{font-size:11px;color:rgba(221,214,254,.8);line-height:1.5;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="85" r="1.5" fill="#fff" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="112" cy="42" r="1" fill="#c084fc" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="290" cy="118" r="2" fill="#fff" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="325" cy="74" r="1" fill="#fff" style="--d:2s;--delay:.4s;"/>
+  <circle class="star" cx="195" cy="26" r="1.5" fill="#c084fc" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="62" cy="195" r="1" fill="#fff" style="--d:2.2s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M320 32 Q342 22 336 52 Q330 72 313 62 Q328 48 320 32Z" fill="rgba(192,132,252,.3)"/>
+  <!-- Decoration: tiger stripes (백호살) -->
+  <g class="deco" transform="translate(265,465)" opacity=".12">
+    <path d="M0 0 Q8 15 0 30" stroke="#c084fc" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M12 5 Q20 20 12 35" stroke="#c084fc" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M24 0 Q32 15 24 30" stroke="#c084fc" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M36 5 Q44 20 36 35" stroke="#c084fc" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="350" rx="190" ry="150" fill="rgba(124,58,237,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">神煞 · 신살</div>
+  <div class="title"><em>백호살</em> 있으면<br>실제로 이런 일이 생긴다</div>
+  <div class="subtitle">甲辰·乙未·丙戌·丁丑 등 해당 일주 확인</div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="gicon">🏥</span>
+    <span class="git">수술·사고 경험이 많은 편</span>
+    <span class="gid">혈액·외상 관련 이슈가 생기기도. 다만 회복력도 강함</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🔥</span>
+    <span class="git">주변 사람이 크게 아프거나 다침</span>
+    <span class="gid">가족·배우자 건강에 주의 필요하다고 봄</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">💪</span>
+    <span class="git">강인한 생명력·체력</span>
+    <span class="gid">오히려 생존력 최강. 힘든 상황을 뚫고 나옴</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🩺</span>
+    <span class="git">의료·법률 계통과 인연</span>
+    <span class="gid">외과·응급의학·법집행 쪽에서 두각 나타냄</span>
+  </div>
+</div>
+
+<div class="bottom-note">
+  <span class="bn-text">뜨끔한 사람 🙋 — 백호살은 용맹함의 살이기도 해요<br>살이 있다 = 그 에너지가 내 안에 있다는 뜻</span>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

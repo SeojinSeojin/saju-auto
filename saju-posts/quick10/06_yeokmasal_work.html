@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>역마살 있는 사람이 이직을 반복하는 이유</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#030d1a 0%,#071528 55%,#040d1f 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.2;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(14,165,233,.15);border:1px solid rgba(14,165,233,.32);color:#7dd3fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Gugi',sans-serif;font-size:19px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(14,165,233,.8);}
+.title em{color:#38bdf8;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:stretch;gap:0;}
+.accent{width:3px;border-radius:4px;background:linear-gradient(180deg,#38bdf8,#0ea5e9);flex-shrink:0;box-shadow:0 0 10px rgba(14,165,233,.7);}
+.body{flex:1;background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.14);border-left:none;border-radius:0 10px 10px 0;padding:8px 12px;box-shadow:0 0 16px rgba(14,165,233,.07);}
+.it{font-size:12.5px;font-weight:700;color:#e0f2fe;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(125,211,252,.52);line-height:1.42;margin-top:2px;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="42" cy="78" r="1.5" fill="#7dd3fc" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="115" cy="40" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="276" cy="106" r="2" fill="#38bdf8" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="318" cy="68" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="193" cy="23" r="1.5" fill="#7dd3fc" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="48" cy="194" r="1" fill="#38bdf8" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="336" cy="302" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="20" cy="326" r="1" fill="#7dd3fc" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="148" cy="12" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="86" cy="532" r="1" fill="#38bdf8" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M316 22 Q340 11 334 44 Q328 66 310 55 Q326 40 316 22Z" fill="rgba(56,189,248,.24)"/>
+  <!-- Arrow/compass decoration -->
+  <g class="deco" transform="translate(255,450)" opacity=".14">
+    <circle cx="28" cy="28" r="26" stroke="#38bdf8" stroke-width="1.5" fill="none"/>
+    <polygon points="28,4 32,24 28,20 24,24" fill="rgba(56,189,248,.6)"/>
+    <polygon points="28,52 32,32 28,36 24,32" fill="rgba(56,189,248,.25)"/>
+    <line x1="4" y1="28" x2="52" y2="28" stroke="#38bdf8" stroke-width="1" opacity=".4"/>
+    <circle cx="28" cy="28" r="3" fill="rgba(56,189,248,.5)"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="162" fill="rgba(10,60,110,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">神煞 · 신살</div>
+  <div class="title">의지 문제가 아니라<br><em>역마살이다</em></div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">역마살은 이동·변화를 타고난 에너지</div><div class="id">寅申巳亥 — 한자리에 머물면 몸이 먼저 반응함</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">같은 환경이 반복되면 뇌가 먼저 지침</div><div class="id">지루함이 아니라 구조적 욕구 — 새 자극이 산소 같은 사람</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">이직이 도망이 아니라 본능적 갱신</div><div class="id">새 곳에서 에너지가 살아나는 걸 몸이 알고 있음</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">역마살 강하면 해외·원거리 인연이 잦음</div><div class="id">먼 곳에서 온 사람과 얽히거나 해외 기회가 열림</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">억지로 붙잡아두면 번아웃 속도가 빠름</div><div class="id">이동성이 보장된 직업군(세일즈·출장·프리랜서)이 잘 맞음</div></div>
+  </div>
+  <div class="item">
+    <div class="accent"></div>
+    <div class="body"><div class="it">역마를 쓰는 직업이 답일 수 있음</div><div class="id">변화 자체를 일로 만들면 살이 되는 신살</div></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

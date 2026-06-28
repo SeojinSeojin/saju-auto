@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>백호살 운에서 만나면 조심해야 할 것들</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(150deg,#180408 0%,#2d0810 55%,#100206 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;transform:scale(1);}50%{opacity:.18;transform:scale(1.04);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 5.8s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(239,68,68,.18);border:1px solid rgba(239,68,68,.36);color:#fca5a5;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.35;color:#fff;text-shadow:0 0 24px rgba(239,68,68,.65);}
+.title em{color:#f87171;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:6px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.14);border-radius:10px;padding:7px 11px;box-shadow:0 0 14px rgba(239,68,68,.08);}
+.num{font-family:'Jua',sans-serif;font-size:17px;color:#f87171;min-width:26px;line-height:1;text-shadow:0 0 8px rgba(239,68,68,.9);}
+.tx{display:flex;flex-direction:column;gap:1px;}
+.it{font-size:12.5px;font-weight:700;color:#fee2e2;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(252,165,165,.6);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.18);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="42" cy="88" r="1.5" fill="#fca5a5" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="118" cy="44" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="280" cy="116" r="2" fill="#f87171" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="78" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#fca5a5" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="198" r="1" fill="#fff" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="328" cy="300" r="1.5" fill="#fca5a5" style="--d:2.8s;--delay:.6s;"/>
+  <path class="moon" d="M325 28 Q347 18 341 48 Q335 68 318 58 Q333 44 325 28Z" fill="rgba(252,165,165,.28)"/>
+  <!-- Tiger stripes deco -->
+  <g class="deco" transform="translate(264,462)" opacity=".12">
+    <path d="M0 0 Q8 18 0 36" stroke="#ef4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M14 4 Q22 22 14 40" stroke="#ef4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M28 0 Q36 18 28 36" stroke="#ef4444" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="196" ry="156" fill="rgba(153,27,27,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">神煞 · 백호살</div>
+  <div class="title"><em>백호살 운</em>에서 만나면<br>조심해야 할 것들</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">무리한 신체 활동·스포츠 부상</span><span class="id">백호 운에서는 사고·외상 위험이 평소보다 높아짐</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">수술·시술 결정은 신중하게</span><span class="id">필요한 수술이면 괜찮지만 미용·선택적 수술은 연기 고려</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">충동적 다툼·법적 분쟁 조심</span><span class="id">백호의 강렬함이 갈등을 극단으로 몰고 가는 경향</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">가족·배우자 건강 체크</span><span class="id">주변 육친에게도 백호 에너지가 영향을 미칠 수 있음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">빠른 결정·도박성 투자는 금물</span><span class="id">운의 강렬함을 투기로 연결하면 큰 손실 가능</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">단, 회복력도 같이 강해지는 시기</span><span class="id">조심하면 오히려 생명력이 극대화되는 구간 💪</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

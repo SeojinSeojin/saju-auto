@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>내 사주에 배우자 복 있는지 보는 법</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#1c0015 0%,#2e0025 55%,#0f0010 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(236,72,153,.18);border:1px solid rgba(236,72,153,.36);color:#f9a8d4;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(236,72,153,.65);}
+.title em{color:#f472b6;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:6px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(236,72,153,.07);border:1px solid rgba(236,72,153,.14);border-radius:10px;padding:7px 11px;box-shadow:0 0 12px rgba(236,72,153,.08);}
+.num{font-family:'Jua',sans-serif;font-size:16px;color:#ec4899;min-width:26px;line-height:1.1;text-shadow:0 0 8px rgba(236,72,153,.8);}
+.tx{display:flex;flex-direction:column;gap:1px;}
+.it{font-size:12px;font-weight:700;color:#fce7f3;line-height:1.35;}
+.id{font-size:10.5px;color:rgba(249,168,212,.6);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="90" r="1.5" fill="#fca5a5" style="--d:2.5s;--delay:.1s;"/>
+  <circle class="star" cx="112" cy="46" r="1" fill="#f9a8d4" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="116" r="2" fill="#fca5a5" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="196" cy="30" r="1.5" fill="#f9a8d4" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="196" r="1" fill="#fff" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 30 Q340 20 334 50 Q328 70 311 60 Q326 46 318 30Z" fill="rgba(249,168,212,.28)"/>
+  <!-- Decoration: ring -->
+  <g class="deco" transform="translate(258,455)" opacity=".14">
+    <circle cx="25" cy="25" r="20" stroke="#ec4899" stroke-width="3" fill="none"/>
+    <circle cx="25" cy="25" r="14" stroke="#ec4899" stroke-width="1" fill="none" opacity=".4"/>
+    <path d="M18 5 Q25 0 32 5" stroke="#f9a8d4" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <circle cx="25" cy="3" r="4" fill="rgba(249,168,212,.4)" stroke="#f9a8d4" stroke-width="1"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="195" ry="155" fill="rgba(190,24,93,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">궁합 · 연애</div>
+  <div class="title">내 사주에<br><em>배우자 복</em> 있는지 보는 법</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">일지(日支)가 배우자 자리</span><span class="id">일주의 지지가 귀인·합이면 좋은 인연이 옴</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">관성(남성 사주)·재성(여성 사주) 위치</span><span class="id">~로 보기도 함. 관성·재성이 용신이면 더 좋음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">배우자성이 충·극을 받으면 주의</span><span class="id">그 해의 세운에 충이 오면 관계 변화가 생김</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">천을귀인·월덕귀인이 일지에 있으면</span><span class="id">좋은 배우자를 만날 가능성이 높다고 봄</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">배우자 대운이 열리는 시기가 있음</span><span class="id">지금 안 나타나도 대운 바뀌면 달라짐</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">만세력 앱에서 일주 확인 후 점검</span><span class="id">사주 상담사와 같이 보는 게 가장 정확함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">07</span>
+    <div class="tx"><span class="it">사주는 경향이지 운명이 아님</span><span class="id">내 선택과 노력으로 바꿀 수 있음 🙋</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

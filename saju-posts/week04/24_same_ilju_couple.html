@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>일주가 같은 커플 특징</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(145deg,#1c0018 0%,#2e0025 55%,#0e000e 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.1;}50%{opacity:.78;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.17;}}
+.card{width:360px;height:640px;padding:64px 24px 84px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.5s ease-in-out infinite;}
+.deco{animation:shimmer 7s ease-in-out infinite 1s;}
+.hero{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:22px;}
+.tag{display:inline-block;background:rgba(236,72,153,.18);border:1px solid rgba(236,72,153,.36);color:#f9a8d4;font-size:10px;padding:2px 10px;border-radius:20px;letter-spacing:.5px;align-self:flex-start;}
+.big-text{font-family:'Jua',sans-serif;font-size:35px;line-height:1.2;color:#fff;text-shadow:0 0 38px rgba(236,72,153,.7),0 0 70px rgba(236,72,153,.25);}
+.big-text em{color:#f472b6;font-style:normal;}
+.phrases{display:flex;flex-direction:column;gap:13px;}
+.phrase-block{border-left:3px solid rgba(236,72,153,.55);padding-left:14px;}
+.phrase{font-family:'Jua',sans-serif;font-size:15px;color:#fce7f3;line-height:1.35;text-shadow:0 0 12px rgba(236,72,153,.4);}
+.phrase-sub{font-size:10.5px;color:rgba(249,168,212,.58);margin-top:3px;line-height:1.5;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="36" cy="88" r="1.5" fill="#fca5a5" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="110" cy="44" r="1" fill="#f9a8d4" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="284" cy="112" r="2" fill="#fca5a5" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="318" cy="76" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="194" cy="28" r="1.5" fill="#f9a8d4" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="56" cy="194" r="1" fill="#fff" style="--d:2.1s;--delay:1.3s;"/>
+  <circle class="star" cx="326" cy="308" r="1.5" fill="#fca5a5" style="--d:2.8s;--delay:.6s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 28 Q340 18 334 48 Q328 68 311 58 Q326 44 318 28Z" fill="rgba(249,168,212,.28)"/>
+  <!-- Decoration: mirror/reflection -->
+  <g class="deco" transform="translate(255,455)" opacity=".14">
+    <path d="M8 0 Q8 0 30 0 Q52 0 52 0 L52 50 Q52 60 30 60 Q8 60 8 50 Z" stroke="#f472b6" stroke-width="2" fill="none"/>
+    <line x1="30" y1="0" x2="30" y2="60" stroke="#f472b6" stroke-width="1" stroke-dasharray="3 3" opacity=".5"/>
+    <circle cx="18" cy="25" r="8" stroke="#f472b6" stroke-width="1.5" fill="none"/>
+    <circle cx="42" cy="25" r="8" stroke="#f472b6" stroke-width="1.5" fill="none"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="355" rx="198" ry="158" fill="rgba(190,24,93,.04)"/>
+</svg>
+
+<div class="hero">
+  <div class="tag">궁합 · 일주</div>
+  <div class="big-text">같은<br><em>일주</em><br>커플</div>
+  <div class="phrases">
+    <div class="phrase-block">
+      <div class="phrase">서로 완전히 이해하지만 답답함</div>
+      <div class="phrase-sub">내 단점이 보임. 거울 보는 것 같아서 갈등</div>
+    </div>
+    <div class="phrase-block">
+      <div class="phrase">싸울 때 완전히 같은 방식으로 싸움</div>
+      <div class="phrase-sub">둘 다 고집 강하면 진짜 안 풀림 ㅠ</div>
+    </div>
+    <div class="phrase-block">
+      <div class="phrase">편안함의 극치 or 지루함의 극치</div>
+      <div class="phrase-sub">너무 같아서 설레지 않을 수도. 뜨끔 🙋</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상관 있는 사람이 유독 직장 상사와 부딪히는 이유</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#020c1e 0%,#041628 55%,#010a1a 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;transform:scale(1);}50%{opacity:.17;transform:scale(1.03);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-4px);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.3s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(59,130,246,.18);border:1px solid rgba(59,130,246,.38);color:#93c5fd;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:18px;line-height:1.38;color:#fff;text-shadow:0 0 24px rgba(59,130,246,.65);}
+.title em{color:#60a5fa;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:6px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.14);border-radius:10px;padding:7px 11px;box-shadow:0 0 14px rgba(59,130,246,.08);}
+.num{font-family:'Jua',sans-serif;font-size:17px;color:#60a5fa;min-width:26px;line-height:1;text-shadow:0 0 8px rgba(59,130,246,.9);}
+.tx{display:flex;flex-direction:column;gap:1px;}
+.it{font-size:12.5px;font-weight:700;color:#dbeafe;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(147,197,253,.62);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.18);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="42" cy="86" r="1.5" fill="#93c5fd" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="118" cy="44" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="280" cy="114" r="2" fill="#60a5fa" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="76" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#93c5fd" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="196" r="1" fill="#fff" style="--d:2.1s;--delay:1.2s;"/>
+  <path class="moon" d="M322 30 Q344 20 338 50 Q332 70 315 60 Q330 46 322 30Z" fill="rgba(147,197,253,.26)"/>
+  <!-- Lightning bolt deco (상관 = breaks rules) -->
+  <g class="deco" transform="translate(266,454)" opacity=".12">
+    <path d="M24 0 L12 24 L22 24 L10 50 L32 18 L20 18 Z" stroke="#3b82f6" stroke-width="1.5" fill="rgba(59,130,246,.15)" stroke-linejoin="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="342" rx="196" ry="156" fill="rgba(30,64,175,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 상관</div>
+  <div class="title"><em>상관</em> 있는 사람이<br>유독 직장 상사와 부딪히는 이유</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">상관이 정관(권위·규칙)을 깨는 별</span><span class="id">제도권·위계질서 자체가 답답하게 느껴지는 기질</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">잘못된 것은 바로 말해버림</span><span class="id">눈치보다 사실을 먼저. 상사 앞에서도 할 말 다 함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">시키는 것보다 더 잘하고 싶어서 충돌</span><span class="id">방식이 다를 뿐 목표는 같은데 자꾸 부딪힘</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">능력은 있는데 평가가 늦어지는 구조</span><span class="id">관성을 건드려 조직 내 인정이 느리게 오는 패턴</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">프리랜서·창업이 진짜 맞는 길</span><span class="id">틀을 깰 수 있는 환경에서 상관의 재능이 폭발함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">상관을 이해하는 상사 만나면 달라짐</span><span class="id">재능을 인정받으면 그 누구보다 충성도가 높아짐 🙋</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

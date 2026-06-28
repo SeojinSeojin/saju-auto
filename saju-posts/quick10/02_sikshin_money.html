@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>식신 있는 사람이 돈 걱정 없는 이유</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#1a1200 0%,#2d1f00 55%,#1a0e00 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.22;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(234,179,8,.18);border:1px solid rgba(234,179,8,.38);color:#fde68a;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Gasoek One',sans-serif;font-size:20px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(234,179,8,.85);}
+.title em{color:#fbbf24;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(234,179,8,.07);border:1px solid rgba(234,179,8,.16);border-radius:10px;padding:8px 12px;box-shadow:0 0 16px rgba(234,179,8,.09);}
+.num{font-family:'Gasoek One',sans-serif;font-size:17px;color:#f59e0b;min-width:26px;line-height:1.15;text-shadow:0 0 10px rgba(234,179,8,.9);}
+.tx{display:flex;flex-direction:column;gap:2px;}
+.it{font-size:12.5px;font-weight:700;color:#fef3c7;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(253,230,138,.55);line-height:1.42;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="55" cy="72" r="1.5" fill="#fde68a" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="130" cy="38" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="265" cy="104" r="2" fill="#fbbf24" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="310" cy="65" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="185" cy="22" r="1.5" fill="#fde68a" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="45" cy="182" r="1" fill="#fbbf24" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="338" cy="290" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="18" cy="340" r="1" fill="#fde68a" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="155" cy="15" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="92" cy="520" r="1" fill="#fbbf24" style="--d:2.4s;--delay:.9s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M315 22 Q340 11 334 44 Q328 66 310 54 Q327 40 315 22Z" fill="rgba(251,191,36,.28)"/>
+  <!-- Coin decoration -->
+  <g class="deco" transform="translate(258,450)" opacity=".15">
+    <circle cx="30" cy="30" r="28" stroke="#f59e0b" stroke-width="2" fill="none"/>
+    <circle cx="30" cy="30" r="22" stroke="#f59e0b" stroke-width="1" fill="none" opacity=".5"/>
+    <text x="30" y="36" text-anchor="middle" font-size="18" fill="rgba(245,158,11,.6)" font-family="serif">福</text>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="160" fill="rgba(180,130,0,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 십성</div>
+  <div class="title">굶어 죽을 사주가 아니라는 게<br><em>이런 뜻이다</em></div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">식신은 먹을 복을 타고난 별</span><span class="id">재물이 끊길 때도 최소한의 생계는 유지됨</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">재성(財星)을 직접 생(生)함</span><span class="id">식신 → 재성 흐름이 자연스러운 수입 구조를 만듦</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">하는 일이 곧 즐거움 = 지속력</span><span class="id">지치지 않으니 결국 오래 벌게 됨</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">창의력·표현력으로 수익 연결</span><span class="id">요리, 콘텐츠, 서비스업에서 두드러짐</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">관살(官殺)을 제압해 스트레스 완충</span><span class="id">돈 걱정보다 즐기는 마인드가 먼저 세팅됨</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">단, 식신을 극하는 편인(偏印)이 없어야 함</span><span class="id">편인이 식신을 깨면 도식(倒食) — 밥그릇이 엎어짐</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사주 볼 때 꼭 알아야 할 용어 10개</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#020b18 0%,#0a1628 55%,#01091a 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(59,130,246,.16);border:1px solid rgba(59,130,246,.32);color:#93c5fd;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(59,130,246,.55);}
+.title em{color:#60a5fa;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:7px;position:relative;z-index:2;}
+.gitem{background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.14);border-radius:10px;padding:9px 10px;display:flex;flex-direction:column;gap:3px;box-shadow:0 0 14px rgba(59,130,246,.08);}
+.gterm{font-family:'Jua',sans-serif;font-size:12.5px;color:#60a5fa;line-height:1;text-shadow:0 0 8px rgba(59,130,246,.6);}
+.gdef{font-size:10px;color:rgba(147,197,253,.65);line-height:1.45;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="88" r="1.5" fill="#93c5fd" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="110" cy="44" r="1" fill="#fff" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="114" r="2" fill="#93c5fd" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="322" cy="78" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="196" cy="30" r="1.5" fill="#fff" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="196" r="1" fill="#93c5fd" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 30 Q340 20 334 50 Q328 70 311 60 Q326 46 318 30Z" fill="rgba(147,197,253,.22)"/>
+  <!-- Decoration: open dictionary/book -->
+  <g class="deco" transform="translate(254,455)" opacity=".12">
+    <rect x="0" y="8" width="26" height="36" rx="3" stroke="#60a5fa" stroke-width="2" fill="none"/>
+    <rect x="28" y="8" width="26" height="36" rx="3" stroke="#60a5fa" stroke-width="2" fill="none"/>
+    <line x1="26" y1="8" x2="28" y2="8" stroke="#60a5fa" stroke-width="3"/>
+    <line x1="26" y1="44" x2="28" y2="44" stroke="#60a5fa" stroke-width="3"/>
+    <line x1="4" y1="18" x2="22" y2="18" stroke="rgba(96,165,250,.4)" stroke-width="1.5"/>
+    <line x1="4" y1="24" x2="22" y2="24" stroke="rgba(96,165,250,.4)" stroke-width="1.5"/>
+    <line x1="32" y1="18" x2="50" y2="18" stroke="rgba(96,165,250,.4)" stroke-width="1.5"/>
+    <line x1="32" y1="24" x2="50" y2="24" stroke="rgba(96,165,250,.4)" stroke-width="1.5"/>
+    <line x1="4" y1="30" x2="18" y2="30" stroke="rgba(96,165,250,.4)" stroke-width="1.5"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="195" ry="155" fill="rgba(30,64,175,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">실용 정보 · 기초</div>
+  <div class="title">사주 볼 때<br>꼭 알아야 할 <em>용어 10개</em></div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="gterm">일간(日干)</span>
+    <span class="gdef">생일의 천간. 나 자신을 상징하는 가장 중요한 글자</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">일주(日柱)</span>
+    <span class="gdef">생일의 천간+지지. 내 본질적 기질과 배우자 자리</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">용신(用神)</span>
+    <span class="gdef">내 사주에서 가장 필요한 오행. 이걸 강화하면 운이 좋아짐</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">십성(十星)</span>
+    <span class="gdef">비견·겁재·식신·상관·정재·편재·정관·편관·정인·편인</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">대운(大運)</span>
+    <span class="gdef">10년 단위 큰 흐름. 인생의 계절을 결정함</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">세운(歲運)</span>
+    <span class="gdef">그 해의 흐름. 올해 어떤 에너지가 강한지 봄</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">충·합(沖·合)</span>
+    <span class="gdef">충=충돌·변화, 합=결합·변환. 관계와 변화의 핵심</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">신살(神煞)</span>
+    <span class="gdef">도화·괴강·백호 등 특수한 에너지. 살이 곧 기질</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">오행(五行)</span>
+    <span class="gdef">목·화·토·금·수. 만물을 구성하는 다섯 에너지</span>
+  </div>
+  <div class="gitem">
+    <span class="gterm">만세력</span>
+    <span class="gdef">생년월일시를 사주로 변환하는 앱/책. 기초 필수 도구 🙋</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

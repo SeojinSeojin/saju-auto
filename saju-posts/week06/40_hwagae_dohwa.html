@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>화개살 + 도화살 동시에 있으면?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#160820 0%,#20082e 55%,#100618 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.1;}50%{opacity:.78;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.17;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.5s ease-in-out infinite;}
+.deco{animation:shimmer 7s ease-in-out infinite 1s;}
+.hero{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:18px;}
+.tag{display:inline-block;background:rgba(236,72,153,.14);border:1px solid rgba(236,72,153,.3);color:#f9a8d4;font-size:10px;padding:2px 10px;border-radius:20px;letter-spacing:.5px;align-self:flex-start;}
+.big-text{font-family:'Jua',sans-serif;font-size:30px;line-height:1.2;color:#fff;text-shadow:0 0 35px rgba(236,72,153,.7),0 0 65px rgba(236,72,153,.25);}
+.big-text em{color:#f472b6;font-style:normal;}
+.compare-blocks{display:flex;gap:10px;}
+.cb{flex:1;border-radius:12px;padding:12px 11px;display:flex;flex-direction:column;gap:5px;}
+.cb.hw{background:rgba(168,85,247,.09);border:1px solid rgba(168,85,247,.2);}
+.cb.dh{background:rgba(236,72,153,.08);border:1px solid rgba(236,72,153,.18);}
+.cb-title{font-family:'Jua',sans-serif;font-size:14px;font-weight:700;line-height:1;}
+.cb-title.hw{color:#c084fc;text-shadow:0 0 10px rgba(168,85,247,.5);}
+.cb-title.dh{color:#f9a8d4;text-shadow:0 0 10px rgba(236,72,153,.45);}
+.cb-item{font-size:10.5px;color:rgba(250,232,255,.7);line-height:1.45;padding-left:8px;border-left:2px solid rgba(255,255,255,.1);}
+.combo-note{background:linear-gradient(90deg,rgba(168,85,247,.1),rgba(236,72,153,.1));border:1px solid rgba(236,72,153,.2);border-radius:10px;padding:10px 14px;position:relative;z-index:2;}
+.combo-text{font-size:11px;color:rgba(249,168,212,.85);line-height:1.55;text-align:center;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="88" r="1.5" fill="#f9a8d4" style="--d:2.4s;--delay:.1s;"/>
+  <circle class="star" cx="112" cy="44" r="1" fill="#fff" style="--d:3.2s;--delay:.6s;"/>
+  <circle class="star" cx="284" cy="116" r="2" fill="#c084fc" style="--d:2.6s;--delay:1.1s;"/>
+  <circle class="star" cx="322" cy="76" r="1" fill="#fff" style="--d:2s;--delay:.4s;"/>
+  <circle class="star" cx="196" cy="30" r="1.5" fill="#f9a8d4" style="--d:3.4s;--delay:.9s;"/>
+  <circle class="star" cx="58" cy="196" r="1" fill="#c084fc" style="--d:2.2s;--delay:1.3s;"/>
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(249,168,212,.25)"/>
+  <!-- Flower deco (화개 + 도화 = flowers) -->
+  <g class="deco" transform="translate(256,454)" opacity=".13">
+    <circle cx="28" cy="28" r="8" fill="rgba(236,72,153,.2)" stroke="#f472b6" stroke-width="1.5"/>
+    <circle cx="28" cy="14" r="5" fill="rgba(236,72,153,.15)" stroke="#f472b6" stroke-width="1"/>
+    <circle cx="28" cy="42" r="5" fill="rgba(236,72,153,.15)" stroke="#f472b6" stroke-width="1"/>
+    <circle cx="14" cy="28" r="5" fill="rgba(168,85,247,.15)" stroke="#c084fc" stroke-width="1"/>
+    <circle cx="42" cy="28" r="5" fill="rgba(168,85,247,.15)" stroke="#c084fc" stroke-width="1"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="350" rx="196" ry="156" fill="rgba(131,24,67,.04)"/>
+</svg>
+
+<div class="hero">
+  <div class="tag">神煞 · 화개+도화</div>
+  <div class="big-text">둘 다<br><em>있으면?</em></div>
+  <div class="compare-blocks">
+    <div class="cb hw">
+      <div class="cb-title hw">🌸 화개살</div>
+      <div class="cb-item">고독 속의 예술성</div>
+      <div class="cb-item">영적·철학적 기질</div>
+      <div class="cb-item">내면의 빛</div>
+      <div class="cb-item">혼자일 때 충전</div>
+    </div>
+    <div class="cb dh">
+      <div class="cb-title dh">💐 도화살</div>
+      <div class="cb-item">자연스러운 매력</div>
+      <div class="cb-item">사람을 끌어당김</div>
+      <div class="cb-item">연애 인연 多</div>
+      <div class="cb-item">군중 속의 빛</div>
+    </div>
+  </div>
+</div>
+
+<div class="combo-note">
+  <div class="combo-text">조합 결과: 혼자이고 싶은데 자꾸 사람이 몰려오는 삶 ㅠ<br>예술·창작으로 매력을 표현하면 최강 조합 🙋</div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

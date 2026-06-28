@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>무토 일간 — 다 받아줄 것 같지만 한계가 있는 사람</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#100800 0%,#201200 55%,#0c0600 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;transform:scale(1);}50%{opacity:.17;transform:scale(1.03);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 5.8s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:4px;}
+.tag{display:inline-block;background:rgba(161,120,60,.18);border:1px solid rgba(161,120,60,.36);color:#d4a853;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:18px;line-height:1.38;color:#fff;text-shadow:0 0 22px rgba(161,120,60,.6);}
+.title em{color:#c8922a;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:6px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(161,120,60,.07);border:1px solid rgba(161,120,60,.13);border-radius:10px;padding:7px 11px;box-shadow:0 0 14px rgba(161,120,60,.08);}
+.num{font-family:'Jua',sans-serif;font-size:17px;color:#c8922a;min-width:26px;line-height:1;text-shadow:0 0 8px rgba(161,120,60,.8);}
+.tx{display:flex;flex-direction:column;gap:1px;}
+.it{font-size:12.5px;font-weight:700;color:#fef3c7;line-height:1.3;}
+.id{font-size:10.5px;color:rgba(212,168,83,.62);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.18);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="42" cy="88" r="1.5" fill="#d4a853" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="118" cy="44" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="280" cy="116" r="2" fill="#c8922a" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="78" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#d4a853" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="198" r="1" fill="#fff" style="--d:2.1s;--delay:1.2s;"/>
+  <path class="moon" d="M325 28 Q347 18 341 48 Q335 68 318 58 Q333 44 325 28Z" fill="rgba(212,168,83,.24)"/>
+  <!-- Mountain/earth deco (무토 = big mountain) -->
+  <g class="deco" transform="translate(255,454)" opacity=".13">
+    <path d="M5 55 L28 10 L52 55Z" stroke="#a17840" stroke-width="2" fill="none" stroke-linejoin="round"/>
+    <path d="M0 55 L60 55" stroke="#a17840" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M22 30 L28 20 L34 30" stroke="#a17840" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="342" rx="196" ry="156" fill="rgba(92,64,20,.04)"/>
+  <text x="180" y="510" text-anchor="middle" font-size="110" fill="rgba(161,120,60,.04)" font-family="serif">戊</text>
+</svg>
+
+<div class="header">
+  <div class="tag">일간 · 戊土</div>
+  <div class="title"><em>무토(戊土)</em> 일간<br>다 받아줄 것 같지만 한계가 있는 사람</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">무토 = 큰 산. 묵직하고 중후한 존재감</span><span class="id">이유 없는 안정감을 주는 사람. 곁에 있으면 든든함</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">웬만한 것은 다 수용하는 포용력</span><span class="id">감정 기복이 적고 큰 산처럼 움직임이 없어 보임</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">하지만 한계를 넘으면 지진처럼 터짐</span><span class="id">무너질 때는 조용히 무너지지 않고 한꺼번에 쏟아냄</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">자신이 힘들어도 먼저 내색하지 않음</span><span class="id">도움 요청을 잘 못함. 혼자 짊어지다가 결국 한계에 도달</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">움직임이 느리지만 한번 결심하면 불변</span><span class="id">산이 굴러가기 시작하면 막을 수 없음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">먼저 자기 한계를 말하는 연습 필요</span><span class="id">무토 있는 분들, 속으로 삭히지 말고 한 마디 먼저 해요 🏔️</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

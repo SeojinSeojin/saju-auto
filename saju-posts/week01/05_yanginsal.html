@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>양인살 — 무서운 살인가 강력한 무기인가</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#100222 0%,#1e0438 55%,#08091e 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.82;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.16;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.3s ease-in-out infinite;}
+.deco{animation:shimmer 5.9s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(168,85,247,.2);border:1px solid rgba(168,85,247,.38);color:#c084fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.35;color:#fff;text-shadow:0 0 22px rgba(168,85,247,.65);}
+.title em{color:#c084fc;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:6px;position:relative;z-index:2;}
+.item{display:flex;align-items:flex-start;gap:10px;background:rgba(168,85,247,.07);border:1px solid rgba(168,85,247,.14);border-radius:10px;padding:7px 11px;box-shadow:0 0 12px rgba(168,85,247,.08);}
+.num{font-family:'Jua',sans-serif;font-size:16px;color:#a855f7;min-width:26px;line-height:1.1;text-shadow:0 0 8px rgba(168,85,247,.9);}
+.tx{display:flex;flex-direction:column;gap:1px;}
+.it{font-size:12px;font-weight:700;color:#ede9fe;line-height:1.35;}
+.id{font-size:10.5px;color:rgba(196,181,253,.62);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="44" cy="90" r="1.5" fill="#fff" style="--d:2.4s;--delay:.1s;"/>
+  <circle class="star" cx="116" cy="46" r="1" fill="#c084fc" style="--d:3.2s;--delay:.6s;"/>
+  <circle class="star" cx="288" cy="116" r="2" fill="#fff" style="--d:2.6s;--delay:1.1s;"/>
+  <circle class="star" cx="326" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.3s;"/>
+  <circle class="star" cx="200" cy="30" r="1.5" fill="#c084fc" style="--d:3.4s;--delay:.9s;"/>
+  <circle class="star" cx="60" cy="200" r="1" fill="#fff" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M322 32 Q344 22 338 52 Q332 72 315 62 Q330 48 322 32Z" fill="rgba(192,132,252,.3)"/>
+  <!-- Decoration: sword/blade (양인살 = sheep blade) -->
+  <g class="deco" transform="translate(258,450)" opacity=".14">
+    <path d="M15 0 L20 50 L15 65 L10 50 Z" fill="rgba(196,181,253,.4)"/>
+    <rect x="10" y="50" width="10" height="5" rx="2" fill="rgba(168,85,247,.6)"/>
+    <rect x="12" y="55" width="6" height="20" rx="3" fill="rgba(196,181,253,.5)"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="155" fill="rgba(109,40,217,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">神煞 · 신살</div>
+  <div class="title"><em>양인살</em><br>무서운 살인가 강력한 무기인가</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="num">01</span>
+    <div class="tx"><span class="it">甲→卯, 丙→午, 庚→酉, 壬→子에 해당</span><span class="id">양인은 일간이 극도로 강해지는 지점</span></div>
+  </div>
+  <div class="item">
+    <span class="num">02</span>
+    <div class="tx"><span class="it">에너지가 넘쳐서 주체를 못 함</span><span class="id">제어 안 되면 폭발. 방향 잡으면 무적</span></div>
+  </div>
+  <div class="item">
+    <span class="num">03</span>
+    <div class="tx"><span class="it">추진력과 결단력이 타의 추종을 불허</span><span class="id">한번 결심하면 진짜 함. 멈추지 않음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">04</span>
+    <div class="tx"><span class="it">편관(칠살)과 만나면 파격적 성공</span><span class="id">살인상정(殺刃相停) — 적과 내가 균형을 이룸</span></div>
+  </div>
+  <div class="item">
+    <span class="num">05</span>
+    <div class="tx"><span class="it">군인·경찰·의사·운동선수에 유리</span><span class="id">강도 높은 직업일수록 양인이 빛을 냄</span></div>
+  </div>
+  <div class="item">
+    <span class="num">06</span>
+    <div class="tx"><span class="it">충(沖)을 맞으면 진짜 위험해짐</span><span class="id">卯酉충, 午子충 — 이때는 진짜 조심</span></div>
+  </div>
+  <div class="item">
+    <span class="num">07</span>
+    <div class="tx"><span class="it">인내심의 한계가 오면 폭발함</span><span class="id">평소엔 조용, 건드리면 걷잡을 수 없음</span></div>
+  </div>
+  <div class="item">
+    <span class="num">08</span>
+    <div class="tx"><span class="it">무기냐 독이냐는 용신에 달려 있음</span><span class="id">방향이 중요. 양인 있다고 나쁜 사람 아님</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

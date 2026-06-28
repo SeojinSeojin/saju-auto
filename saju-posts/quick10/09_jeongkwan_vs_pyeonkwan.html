@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정관 vs 편관 — 직장생활 스타일이 이렇게 다르다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(155deg,#060a18 0%,#0b1028 55%,#070a1c 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.14;}50%{opacity:.88;}}
+@keyframes shimmer{0%,100%{opacity:.08;transform:scale(1);}50%{opacity:.2;transform:scale(1.05);}}
+.card{width:360px;height:640px;padding:60px 20px 80px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:8px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1.2s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(99,102,241,.16);border:1px solid rgba(99,102,241,.3);color:#a5b4fc;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Gugi',sans-serif;font-size:18px;line-height:1.38;color:#fff;text-shadow:0 0 28px rgba(99,102,241,.8);}
+.title em{color:#818cf8;font-style:normal;}
+.versus{flex:1;display:flex;gap:8px;position:relative;z-index:2;}
+.col{flex:1;display:flex;flex-direction:column;gap:6px;}
+.col-head{text-align:center;font-family:'Gugi',sans-serif;font-size:14px;padding:7px 4px;border-radius:8px;}
+.jk .col-head{background:rgba(99,102,241,.18);border:1px solid rgba(99,102,241,.3);color:#a5b4fc;text-shadow:0 0 8px rgba(99,102,241,.9);}
+.pk .col-head{background:rgba(239,68,68,.14);border:1px solid rgba(239,68,68,.3);color:#fca5a5;text-shadow:0 0 8px rgba(239,68,68,.8);}
+.row{border-radius:8px;padding:7px 9px;font-size:10.5px;line-height:1.42;}
+.jk .row{background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.13);color:#e0e7ff;}
+.pk .row{background:rgba(239,68,68,.06);border:1px solid rgba(239,68,68,.12);color:#fee2e2;}
+.lbl{font-size:9px;font-weight:700;margin-bottom:2px;opacity:.55;letter-spacing:.4px;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="41" cy="81" r="1.5" fill="#a5b4fc" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="117" cy="43" r="1" fill="#fff" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="277" cy="110" r="2" fill="#818cf8" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="319" cy="73" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="193" cy="26" r="1.5" fill="#fca5a5" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="53" cy="197" r="1" fill="#818cf8" style="--d:2.1s;--delay:1.2s;"/>
+  <circle class="star" cx="337" cy="303" r="1.5" fill="#fff" style="--d:2.8s;--delay:.6s;"/>
+  <circle class="star" cx="22" cy="329" r="1" fill="#fca5a5" style="--d:3.2s;--delay:.2s;"/>
+  <circle class="star" cx="148" cy="13" r="1" fill="#fff" style="--d:2.6s;--delay:1.5s;"/>
+  <circle class="star" cx="88" cy="527" r="1" fill="#818cf8" style="--d:2.4s;--delay:.9s;"/>
+  <path class="moon" d="M318 25 Q342 14 336 47 Q330 69 312 58 Q328 43 318 25Z" fill="rgba(129,140,248,.24)"/>
+  <g class="deco" transform="translate(256,452)" opacity=".12">
+    <rect x="4" y="4" width="24" height="30" rx="3" stroke="#818cf8" stroke-width="1.5" fill="none"/>
+    <rect x="32" y="4" width="24" height="30" rx="3" stroke="#f87171" stroke-width="1.5" fill="none"/>
+    <line x1="28" y1="19" x2="32" y2="19" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="200" ry="162" fill="rgba(40,40,120,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 십성</div>
+  <div class="title">같은 관(官)인데<br><em>왜 이렇게 다른가</em></div>
+</div>
+
+<div class="versus">
+  <div class="col jk">
+    <div class="col-head">正官 정관</div>
+    <div class="row"><div class="lbl">규칙 관계</div>규정·절차 철저히 따름. 위반이 불편함</div>
+    <div class="row"><div class="lbl">일 스타일</div>안정·지속 선호. 예측 가능한 환경에서 최강</div>
+    <div class="row"><div class="lbl">평가 방식</div>공정한 기준으로 인정받길 원함</div>
+    <div class="row"><div class="lbl">스트레스</div>불합리한 지시, 원칙 없는 조직</div>
+    <div class="row"><div class="lbl">직업 적합</div>공직·금융·법·대기업 안정직</div>
+  </div>
+  <div class="col pk">
+    <div class="col-head">偏官 편관</div>
+    <div class="row"><div class="lbl">규칙 관계</div>규칙보다 결과. 비효율 룰은 무시하고 싶음</div>
+    <div class="row"><div class="lbl">일 스타일</div>도전·돌파 선호. 위기 상황에서 오히려 살아남</div>
+    <div class="row"><div class="lbl">평가 방식</div>성과로만 인정받으면 됨. 과정은 크게 안 중요</div>
+    <div class="row"><div class="lbl">스트레스</div>느린 의사결정, 성장 없는 루틴</div>
+    <div class="row"><div class="lbl">직업 적합</div>창업·군경·영업·스타트업 리더</div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

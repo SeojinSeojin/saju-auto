@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대운 바뀌는 해에 생기는 일 총정리</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#020b18 0%,#0a1628 55%,#01091a 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(59,130,246,.16);border:1px solid rgba(59,130,246,.32);color:#93c5fd;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(59,130,246,.55);}
+.title em{color:#60a5fa;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative;z-index:2;}
+.gitem{background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.15);border-radius:12px;padding:12px 11px;display:flex;flex-direction:column;gap:5px;box-shadow:0 0 16px rgba(59,130,246,.09);}
+.gitem.wide{grid-column:span 2;}
+.gicon{font-size:20px;}
+.git{font-size:12px;font-weight:700;color:#dbeafe;line-height:1.35;}
+.gid{font-size:10px;color:rgba(147,197,253,.58);line-height:1.45;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="38" cy="90" r="1.5" fill="#93c5fd" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="110" cy="46" r="1" fill="#fff" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="116" r="2" fill="#93c5fd" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="322" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="196" cy="30" r="1.5" fill="#fff" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="196" r="1" fill="#93c5fd" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M320 30 Q342 20 336 50 Q330 70 313 60 Q328 46 320 30Z" fill="rgba(147,197,253,.22)"/>
+  <!-- Decoration: clock/cycle wheel -->
+  <g class="deco" transform="translate(256,454)" opacity=".12">
+    <circle cx="26" cy="26" r="22" stroke="#60a5fa" stroke-width="2" fill="none"/>
+    <line x1="26" y1="4" x2="26" y2="14" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="26" y1="38" x2="26" y2="48" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="4" y1="26" x2="14" y2="26" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="38" y1="26" x2="48" y2="26" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="26" y1="26" x2="34" y2="16" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="26" y1="26" x2="26" y2="35" stroke="#60a5fa" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="26" cy="26" r="3" fill="#60a5fa"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="195" ry="155" fill="rgba(30,64,175,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">운세 · 대운</div>
+  <div class="title"><em>대운</em> 바뀌는 해에<br>생기는 일 총정리</div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="gicon">🔄</span>
+    <span class="git">1~2년 전부터 예조가 옴</span>
+    <span class="gid">뭔가 이상하다 싶을 때 이미 대운 전환기임</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">💼</span>
+    <span class="git">직업·진로가 바뀜</span>
+    <span class="gid">이직·창업·전공 변경이 대운 전환기에 몰림</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">💔</span>
+    <span class="git">관계 변화가 온다</span>
+    <span class="gid">중요한 만남이나 이별이 이 시기에 집중됨</span>
+  </div>
+  <div class="gitem">
+    <span class="gicon">🏠</span>
+    <span class="git">거주지·환경 변화</span>
+    <span class="gid">이사·유학·독립 등 물리적 이동이 많아짐</span>
+  </div>
+  <div class="gitem wide">
+    <span class="gicon">💡</span>
+    <span class="git">내 대운 전환 나이 = (대운수 × 10) ± 기준</span>
+    <span class="gid">만세력 앱에서 대운표 확인 → 전환기에 큰 결정 내리지 말고 1년 관찰 후 실행 🙋</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>병화 vs 정화 — 같은 화인데 왜 이렇게 다른가</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#140602 0%,#220c02 55%,#0e0402 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.1;}50%{opacity:.78;}}
+@keyframes shimmer{0%,100%{opacity:.06;}50%{opacity:.17;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.5s ease-in-out infinite;}
+.deco{animation:shimmer 7s ease-in-out infinite 1s;}
+.hero{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:18px;}
+.tag{display:inline-block;background:rgba(234,88,12,.16);border:1px solid rgba(234,88,12,.32);color:#fdba74;font-size:10px;padding:2px 10px;border-radius:20px;letter-spacing:.5px;align-self:flex-start;}
+.big-text{font-family:'Jua',sans-serif;font-size:30px;line-height:1.2;color:#fff;text-shadow:0 0 35px rgba(234,88,12,.7),0 0 65px rgba(234,88,12,.25);}
+.big-text em{color:#fb923c;font-style:normal;}
+.compare-blocks{display:flex;gap:10px;}
+.cb{flex:1;border-radius:12px;padding:12px 11px;display:flex;flex-direction:column;gap:5px;}
+.cb.bh{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.18);}
+.cb.jh{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.18);}
+.cb-title{font-family:'Jua',sans-serif;font-size:14px;font-weight:700;line-height:1;}
+.cb-title.bh{color:#fca5a5;text-shadow:0 0 10px rgba(239,68,68,.5);}
+.cb-title.jh{color:#fcd34d;text-shadow:0 0 10px rgba(245,158,11,.45);}
+.cb-item{font-size:10.5px;color:rgba(255,237,213,.72);line-height:1.45;padding-left:8px;border-left:2px solid rgba(255,255,255,.1);}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="36" cy="88" r="1.5" fill="#fdba74" style="--d:2.4s;--delay:.1s;"/>
+  <circle class="star" cx="110" cy="44" r="1" fill="#fff" style="--d:3.2s;--delay:.6s;"/>
+  <circle class="star" cx="282" cy="114" r="2" fill="#fca5a5" style="--d:2.6s;--delay:1.1s;"/>
+  <circle class="star" cx="318" cy="78" r="1" fill="#fff" style="--d:2s;--delay:.4s;"/>
+  <circle class="star" cx="194" cy="30" r="1.5" fill="#fdba74" style="--d:3.4s;--delay:.9s;"/>
+  <circle class="star" cx="56" cy="194" r="1" fill="#fca5a5" style="--d:2.2s;--delay:1.3s;"/>
+  <path class="moon" d="M316 28 Q338 18 332 48 Q326 68 309 58 Q324 44 316 28Z" fill="rgba(253,186,116,.25)"/>
+  <!-- Sun vs candle deco -->
+  <g class="deco" transform="translate(250,450)" opacity=".13">
+    <!-- Sun (병화) -->
+    <circle cx="16" cy="16" r="10" stroke="#ef4444" stroke-width="2" fill="rgba(239,68,68,.12)"/>
+    <line x1="16" y1="2" x2="16" y2="6" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <line x1="16" y1="26" x2="16" y2="30" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <line x1="2" y1="16" x2="6" y2="16" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <line x1="26" y1="16" x2="30" y2="16" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+    <!-- Candle (정화) -->
+    <path d="M48 18 Q48 30 48 40 Q48 50 54 50 Q60 50 60 40 Q60 30 60 18 Q56 28 48 18Z" stroke="#d97706" stroke-width="1.5" fill="rgba(217,119,6,.12)"/>
+    <rect x="50" y="50" width="8" height="14" rx="1.5" stroke="#b45309" stroke-width="1.5" fill="none"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="355" rx="198" ry="158" fill="rgba(124,45,18,.04)"/>
+</svg>
+
+<div class="hero">
+  <div class="tag">일간 비교 · 火</div>
+  <div class="big-text">같은 화,<br><em>왜 이렇게</em><br>다른가</div>
+  <div class="compare-blocks">
+    <div class="cb bh">
+      <div class="cb-title bh">☀️ 병화(丙)</div>
+      <div class="cb-item">태양. 모두를 비춤</div>
+      <div class="cb-item">표정에 다 나옴</div>
+      <div class="cb-item">폭발적 에너지</div>
+      <div class="cb-item">번아웃 오면 주변도 영향</div>
+      <div class="cb-item">존재 자체가 분위기</div>
+    </div>
+    <div class="cb jh">
+      <div class="cb-title jh">🕯️ 정화(丁)</div>
+      <div class="cb-item">촛불. 곁의 사람을 비춤</div>
+      <div class="cb-item">감정이 섬세하게 흐름</div>
+      <div class="cb-item">헌신적·따뜻한 에너지</div>
+      <div class="cb-item">서서히 꺼지는 위험</div>
+      <div class="cb-item">나를 먼저 지켜야 함 🙋</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>겁재 있으면 진짜 돈을 빼앗기나</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#0a0600 0%,#1a0f05 55%,#080500 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.8;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite .8s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(245,158,11,.16);border:1px solid rgba(245,158,11,.32);color:#fcd34d;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19px;line-height:1.4;color:#fff;text-shadow:0 0 22px rgba(245,158,11,.55);}
+.title em{color:#fbbf24;font-style:normal;}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:9px;position:relative;z-index:2;}
+.gitem{background:rgba(245,158,11,.07);border:1px solid rgba(245,158,11,.15);border-radius:12px;padding:13px 11px;display:flex;flex-direction:column;gap:5px;box-shadow:0 0 16px rgba(245,158,11,.09);}
+.gitem.wide{grid-column:span 2;}
+.glabel{font-size:9.5px;font-weight:700;color:rgba(253,211,77,.55);letter-spacing:.4px;}
+.git{font-size:12px;font-weight:700;color:#fef3c7;line-height:1.35;}
+.gid{font-size:10px;color:rgba(253,211,77,.58);line-height:1.45;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="90" r="1.5" fill="#fcd34d" style="--d:2.5s;--delay:0s;"/>
+  <circle class="star" cx="112" cy="46" r="1" fill="#fff" style="--d:3s;--delay:.6s;"/>
+  <circle class="star" cx="285" cy="116" r="2" fill="#fcd34d" style="--d:2.8s;--delay:1s;"/>
+  <circle class="star" cx="320" cy="80" r="1" fill="#fff" style="--d:2.1s;--delay:.4s;"/>
+  <circle class="star" cx="196" cy="30" r="1.5" fill="#fff" style="--d:3.3s;--delay:.8s;"/>
+  <circle class="star" cx="60" cy="196" r="1" fill="#fcd34d" style="--d:2.3s;--delay:1.4s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M318 30 Q340 20 334 50 Q328 70 311 60 Q326 46 318 30Z" fill="rgba(253,211,77,.22)"/>
+  <!-- Decoration: coin with crack -->
+  <g class="deco" transform="translate(258,455)" opacity=".14">
+    <circle cx="25" cy="25" r="22" stroke="#f59e0b" stroke-width="2.5" fill="none"/>
+    <circle cx="25" cy="25" r="14" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity=".5"/>
+    <text x="18" y="30" font-size="14" fill="rgba(245,158,11,.6)" font-family="serif">₩</text>
+    <path d="M14 10 L20 18" stroke="#f59e0b" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="345" rx="195" ry="155" fill="rgba(146,64,14,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">十星 · 십성</div>
+  <div class="title"><em>겁재</em> 있으면<br>진짜 돈을 빼앗기나</div>
+</div>
+
+<div class="grid">
+  <div class="gitem">
+    <span class="glabel">겁재란?</span>
+    <span class="git">나와 오행이 같되 음양이 다른 별</span>
+    <span class="gid">비견과 달리 경쟁적·충동적 에너지를 가짐</span>
+  </div>
+  <div class="gitem">
+    <span class="glabel">재물에서</span>
+    <span class="git">재성을 겁탈하는 구조</span>
+    <span class="gid">벌어도 흘러나가는 패턴. 지출 통제가 관건</span>
+  </div>
+  <div class="gitem">
+    <span class="glabel">긍정적으로</span>
+    <span class="git">경쟁심·승부욕의 에너지</span>
+    <span class="gid">라이벌 있을 때 오히려 불꽃이 튀김</span>
+  </div>
+  <div class="gitem">
+    <span class="glabel">주의할 것</span>
+    <span class="git">동업·공동 투자에서 손해</span>
+    <span class="gid">~로 보기도 함. 혼자 하는 사업이 더 안전</span>
+  </div>
+  <div class="gitem wide">
+    <span class="glabel">결론 💡</span>
+    <span class="git">겁재 있다고 무조건 돈 빼앗기는 건 아님</span>
+    <span class="gid">용신과 사주 전체 구조에 따라 달라짐. 만세력 앱으로 확인하세요 🙋</span>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>

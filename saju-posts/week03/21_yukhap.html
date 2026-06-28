@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>육합 궁합 — 삼합보다 더 찰떡인 조합</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{width:360px;height:640px;overflow:hidden;background:linear-gradient(148deg,#1a0010 0%,#2d0020 55%,#0f000f 100%);font-family:'Noto Sans KR',sans-serif;color:#fff;}
+@keyframes twinkle{0%,100%{opacity:.12;}50%{opacity:.82;}}
+@keyframes shimmer{0%,100%{opacity:.07;}50%{opacity:.18;}}
+.card{width:360px;height:640px;padding:62px 22px 82px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:9px;}
+.bg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;}
+.star{animation:twinkle var(--d,2.5s) infinite var(--delay,0s);}
+.moon{animation:shimmer 4.2s ease-in-out infinite;}
+.deco{animation:shimmer 6s ease-in-out infinite 1s;}
+.header{position:relative;z-index:2;margin-bottom:2px;}
+.tag{display:inline-block;background:rgba(236,72,153,.18);border:1px solid rgba(236,72,153,.36);color:#f9a8d4;font-size:10px;padding:2px 10px;border-radius:20px;margin-bottom:7px;letter-spacing:.5px;}
+.title{font-family:'Jua',sans-serif;font-size:19.5px;line-height:1.35;color:#fff;text-shadow:0 0 22px rgba(236,72,153,.65);}
+.title em{color:#f472b6;font-style:normal;}
+.items{flex:1;display:flex;flex-direction:column;gap:7px;position:relative;z-index:2;}
+.item{display:flex;align-items:center;gap:12px;background:rgba(236,72,153,.07);border:1px solid rgba(236,72,153,.14);border-radius:10px;padding:8px 12px;box-shadow:0 0 14px rgba(236,72,153,.09);}
+.pair{font-family:'Jua',sans-serif;font-size:16px;color:#f9a8d4;min-width:52px;text-shadow:0 0 8px rgba(236,72,153,.8);text-align:center;}
+.tx{display:flex;flex-direction:column;gap:1px;flex:1;}
+.it{font-size:11.5px;font-weight:700;color:#fce7f3;line-height:1.35;}
+.id{font-size:10px;color:rgba(249,168,212,.6);line-height:1.4;}
+.footer{position:absolute;bottom:18px;right:18px;font-size:9.5px;color:rgba(255,255,255,.17);letter-spacing:1px;z-index:2;}
+</style>
+</head>
+<body>
+<div class="card">
+<svg class="bg" viewBox="0 0 360 640" fill="none">
+  <circle class="star" cx="40" cy="88" r="1.5" fill="#fca5a5" style="--d:2.3s;--delay:0s;"/>
+  <circle class="star" cx="114" cy="44" r="1" fill="#f9a8d4" style="--d:3.1s;--delay:.5s;"/>
+  <circle class="star" cx="286" cy="112" r="2" fill="#fca5a5" style="--d:2.7s;--delay:1s;"/>
+  <circle class="star" cx="318" cy="78" r="1" fill="#fff" style="--d:1.9s;--delay:.3s;"/>
+  <circle class="star" cx="196" cy="28" r="1.5" fill="#f9a8d4" style="--d:3.5s;--delay:.8s;"/>
+  <circle class="star" cx="58" cy="196" r="1" fill="#fff" style="--d:2.1s;--delay:1.3s;"/>
+  <circle class="star" cx="328" cy="306" r="1.5" fill="#fca5a5" style="--d:2.8s;--delay:.6s;"/>
+  <!-- Crescent moon -->
+  <path class="moon" d="M316 28 Q338 18 332 48 Q326 68 309 58 Q324 44 316 28Z" fill="rgba(249,168,212,.28)"/>
+  <!-- Decoration: interlocked hearts -->
+  <g class="deco" transform="translate(258,456)" opacity=".15">
+    <path d="M15 20 Q5 10 5 5 Q5 0 10 0 Q15 0 15 6 Q15 0 20 0 Q25 0 25 5 Q25 10 15 20Z" fill="rgba(244,114,182,.4)"/>
+    <path d="M30 25 Q20 15 20 10 Q20 5 25 5 Q30 5 30 11 Q30 5 35 5 Q40 5 40 10 Q40 15 30 25Z" fill="rgba(244,114,182,.3)" transform="translate(5,5)"/>
+  </g>
+  <ellipse class="deco" cx="180" cy="340" rx="195" ry="155" fill="rgba(190,24,93,.04)"/>
+</svg>
+
+<div class="header">
+  <div class="tag">궁합 · 합</div>
+  <div class="title"><em>육합</em> 궁합<br>삼합보다 더 찰떡인 조합</div>
+</div>
+
+<div class="items">
+  <div class="item">
+    <span class="pair">子 ↔ 丑</span>
+    <div class="tx"><span class="it">쥐 ↔ 소 — 토(土)로 합</span><span class="id">차분하게 서로를 채워주는 관계. 신뢰가 깊어짐</span></div>
+  </div>
+  <div class="item">
+    <span class="pair">寅 ↔ 亥</span>
+    <div class="tx"><span class="it">호랑이 ↔ 돼지 — 목(木)으로 합</span><span class="id">서로 성장시키는 관계. 함께 있으면 발전함</span></div>
+  </div>
+  <div class="item">
+    <span class="pair">卯 ↔ 戌</span>
+    <div class="tx"><span class="it">토끼 ↔ 개 — 화(火)로 합</span><span class="id">열정이 넘치지만 감정 기복도 큰 관계</span></div>
+  </div>
+  <div class="item">
+    <span class="pair">辰 ↔ 酉</span>
+    <div class="tx"><span class="it">용 ↔ 닭 — 금(金)으로 합</span><span class="id">실용적이고 안정적인 파트너십</span></div>
+  </div>
+  <div class="item">
+    <span class="pair">巳 ↔ 申</span>
+    <div class="tx"><span class="it">뱀 ↔ 원숭이 — 수(水)로 합</span><span class="id">지적으로 통하는 관계. 대화가 즐거움</span></div>
+  </div>
+  <div class="item">
+    <span class="pair">午 ↔ 未</span>
+    <div class="tx"><span class="it">말 ↔ 양 — 화·토(火·土)로 합</span><span class="id">따뜻하고 편안한 관계. 자연스럽게 끌림 🙋</span></div>
+  </div>
+</div>
+
+<div class="footer">@saju.card</div>
+</div>
+</body>
+</html>
