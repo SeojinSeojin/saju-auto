@@ -65,8 +65,8 @@ def build_short(image_path: str, audio_dir: str, duration_secs: int = 7) -> str:
     video = (
         ffmpeg
         .input(image_path, loop=1, t=duration_secs, framerate=30)
-        .filter("scale", "iw*min(1080/iw\\,1920/ih)", "ih*min(1080/iw\\,1920/ih)")
-        .filter("pad", 1080, 1920, "(1080-iw)/2", "(1920-ih)/2", color="black")
+        .filter("scale", 1080, 1920, force_original_aspect_ratio="decrease")
+        .filter("pad", 1080, 1920, "(ow-iw)/2", "(oh-ih)/2", color="black")
         .filter("setsar", "1")
     )
 
