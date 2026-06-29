@@ -40,10 +40,19 @@ def main() -> None:
     html_path = os.path.join(_POSTS_DIR, item["filename"])
     tmp_png = None
     tmp_mp4 = None
+    tmp_audio = None
     try:
         from media_pipeline import render_html_to_png, build_short
+        from audio_fetcher import fetch_random_track
+
+        try:
+            tmp_audio = fetch_random_track(genre="ambient")
+            log.info("Fetched Pixabay audio: %s", tmp_audio)
+        except Exception as exc:
+            log.warning("Could not fetch Pixabay audio (%s); falling back to local dir", exc)
+
         tmp_png = render_html_to_png(html_path)
-        tmp_mp4 = build_short(tmp_png, AUDIO_DIR, SHORT_DURATION_SECS)
+        tmp_mp4 = build_short(tmp_png, AUDIO_DIR, SHORT_DURATION_SECS, audio_path=tmp_audio)
 
         if DRY_RUN:
             log.info("DRY_RUN: built %s for item %s — %s", tmp_mp4, item["id"], item["topic"])
@@ -64,7 +73,7 @@ def main() -> None:
         log.info("Posted item %s → video %s", item["id"], video_id)
 
     finally:
-        for tmp in (tmp_png, tmp_mp4):
+        for tmp in (tmp_png, tmp_mp4, tmp_audio):
             if tmp and os.path.exists(tmp):
                 os.remove(tmp)
 

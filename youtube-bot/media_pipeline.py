@@ -40,9 +40,10 @@ def render_html_to_png(html_path: str) -> str:
     return output_path
 
 
-def build_short(image_path: str, audio_dir: str, duration_secs: int = 7) -> str:
+def build_short(image_path: str, audio_dir: str, duration_secs: int = 7, audio_path: str | None = None) -> str:
     """
-    Build a 1080x1920 MP4 Short from a still image + random audio track.
+    Build a 1080x1920 MP4 Short from a still image + audio.
+    audio_path takes priority over audio_dir; if neither has audio the video is silent.
     Returns the path to a temp MP4 file. Caller is responsible for deleting it.
     Raises FileNotFoundError if image_path does not exist.
     Raises RuntimeError if ffmpeg is not installed.
@@ -51,13 +52,16 @@ def build_short(image_path: str, audio_dir: str, duration_secs: int = 7) -> str:
         raise FileNotFoundError(f"Image not found: {image_path}")
 
     audio_extensions = {".mp3", ".wav", ".m4a"}
-    audio_files = []
-    if audio_dir and os.path.isdir(audio_dir):
-        audio_files = [
-            os.path.join(audio_dir, f)
-            for f in os.listdir(audio_dir)
-            if os.path.splitext(f)[1].lower() in audio_extensions
-        ]
+    if audio_path and os.path.exists(audio_path):
+        audio_files = [audio_path]
+    else:
+        audio_files = []
+        if audio_dir and os.path.isdir(audio_dir):
+            audio_files = [
+                os.path.join(audio_dir, f)
+                for f in os.listdir(audio_dir)
+                if os.path.splitext(f)[1].lower() in audio_extensions
+            ]
 
     fd, output_path = tempfile.mkstemp(suffix=".mp4")
     os.close(fd)
