@@ -1,9 +1,12 @@
 import json
+import logging
 import os
 import random
 import tempfile
 import urllib.parse
 import urllib.request
+
+log = logging.getLogger(__name__)
 
 _MUSIC_API = "https://pixabay.com/api/music/"
 
@@ -18,23 +21,36 @@ def fetch_random_track(genre: str = "ambient") -> str:
         raise RuntimeError("PIXABAY_API_KEY env var is not set")
 
     params = urllib.parse.urlencode({"key": api_key, "genre": genre, "per_page": 20})
-    req = urllib.request.Request(
-        f"{_MUSIC_API}?{params}",
-        headers={"User-Agent": "saju-youtube-bot/1.0"},
-    )
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        data = json.loads(resp.read())
+    url = f"{_MUSIC_API}?{params}"
+    log.info("Fetching Pixabay music: %s", url.replace(api_key, "***"))
 
+    req = urllib.request.Request(url, headers={"User-Agent": "saju-youtube-bot/1.0"})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        raw = resp.read()
+
+    data = json.loads(raw)
     hits = data.get("hits", [])
+    log.info("Pixabay response: total=%s hits=%s", data.get("total"), len(hits))
+
     if not hits:
-        raise RuntimeError(f"No Pixabay tracks found for genre={genre!r}")
+        raise RuntimeError(
+            f"No Pixabay tracks found for genre={genre!r}. "
+            f"Raw response (first 500 chars): {raw[:500]}"
+        )
 
     track = random.choice(hits)
-    audio_url = track.get("audio") or track.get("audioUrl") or track.get("url")
-    if not audio_url:
-        raise RuntimeError(f"Could not find audio URL in Pixabay response: {list(track.keys())}")
+    log.info("Track keys available: %s", list(track.keys()))
 
+    audio_url = track.get("audio") or track.get("audioUrl") or track.get("url") or track.get("previewUrl")
+    if not audio_url:
+        raise RuntimeError(
+            f"Could not find audio URL in track. Keys were: {list(track.keys())}. "
+            f"Track data: {json.dumps(track)}"
+        )
+
+    log.info("Downloading audio from: %s", audio_url)
     fd, tmp_path = tempfile.mkstemp(suffix=".mp3")
     os.close(fd)
     urllib.request.urlretrieve(audio_url, tmp_path)
+    log.info("Audio saved to: %s (%d bytes)", tmp_path, os.path.getsize(tmp_path))
     return tmp_path

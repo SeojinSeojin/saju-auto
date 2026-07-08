@@ -48,8 +48,8 @@ def main() -> None:
         try:
             tmp_audio = fetch_random_track(genre="ambient")
             log.info("Fetched Pixabay audio: %s", tmp_audio)
-        except Exception as exc:
-            log.warning("Could not fetch Pixabay audio (%s); falling back to local dir", exc)
+        except Exception:
+            log.warning("Could not fetch Pixabay audio — falling back to local dir", exc_info=True)
 
         tmp_png = render_html_to_png(html_path)
         tmp_mp4 = build_short(tmp_png, AUDIO_DIR, SHORT_DURATION_SECS, audio_path=tmp_audio)
